@@ -31,6 +31,7 @@
   <project path="frameworks/base" name="Project-1CE/frameworks_base" />
   <project path="frameworks/native" name="Project-1CE/frameworks_native" />
   <project path="hardware/libhardware" name="Project-1CE/hardware_libhardware" />
+  <project path="hardware/qcom/bootctrl" name="Project-1CE/hardware_qcom_bootctrl" />
   <!-- <project path="hardware/qcom/wlan" name="Project-1CE/hardware_qcom_wlan" /> -->
   <project path="system/core" name="Project-1CE/system_core" />
   <project path="system/sepolicy" name="Project-1CE/system_sepolicy" />
