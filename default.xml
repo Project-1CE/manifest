@@ -775,5 +775,8 @@
 
   <include name="snippets/lineage.xml" />
 
+  <!-- Project ICE snippet -->
+  <include name="snippets/custom.xml"/>
+
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 </manifest>

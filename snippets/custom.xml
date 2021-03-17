@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote  name="custom"
+           fetch="https://github.com/Project-1CE"
+           revision="lineage-18.1" />
+
+  <remote  name="custom-priv"
+           fetch="ssh://git@github.com/Project-1CE"
+           revision="lineage-18.1" />
+
+  <!-- Replace existing repositories -->
+  <remove-project name="LineageOS/android" />
+  <project path="android" name="manifest" remote="custom" />
+
+  <!-- Add new repositories -->
+
+  <!-- External repositories -->
+
+</manifest>
