@@ -12,6 +12,8 @@
   <!-- Replace existing repositories -->
   <remove-project name="LineageOS/android" />
   <project path="android" name="manifest" remote="custom" />
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/base" name="frameworks_base" remote="custom" />
   <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="vendor_lineage" remote="custom" />
 
