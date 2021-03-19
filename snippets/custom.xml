@@ -24,6 +24,8 @@
   <project path="frameworks/base" name="frameworks_base" remote="custom" />
   <remove-project name="LineageOS/android_system_core" />
   <project path="system/core" name="system_core" remote="custom" />
+  <remove-project name="platform/system/security" />
+  <project path="system/security" name="system_security" remote="custom" />
   <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="vendor_lineage" remote="custom" />
 
