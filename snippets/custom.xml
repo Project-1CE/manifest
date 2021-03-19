@@ -14,6 +14,8 @@
   <project path="android" name="manifest" remote="custom" />
   <remove-project name="LineageOS/android_bionic" />
   <project path="bionic" name="bionic" remote="custom" />
+  <remove-project name="LineageOS/android_build_soong" />
+  <project path="build/soong" name="build_soong" remote="custom" />
   <remove-project name="LineageOS/android_external_openssh" />
   <project path="external/openssh" name="external_openssh" remote="custom" />
   <remove-project name="LineageOS/android_frameworks_base" />
