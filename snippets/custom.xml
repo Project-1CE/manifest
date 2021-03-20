@@ -15,7 +15,10 @@
   <remove-project name="LineageOS/android_bionic" />
   <project path="bionic" name="bionic" remote="custom" />
   <remove-project name="LineageOS/android_build_soong" />
-  <project path="build/soong" name="build_soong" remote="custom" />
+  <project path="build/soong" name="build_soong" remote="custom" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="custom" />
   <remove-project name="LineageOS/android_external_openssh" />
