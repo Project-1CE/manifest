@@ -12,6 +12,8 @@
   <!-- Replace existing repositories -->
   <remove-project name="LineageOS/android" />
   <project path="android" name="manifest" remote="custom" />
+  <remove-project name="LineageOS/android_art" />
+  <project path="art" name="art" remote="custom" />
   <remove-project name="LineageOS/android_bionic" />
   <project path="bionic" name="bionic" remote="custom" />
   <remove-project name="LineageOS/android_build_soong" />
