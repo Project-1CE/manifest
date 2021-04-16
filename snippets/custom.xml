@@ -29,6 +29,8 @@
   <project path="frameworks/base" name="frameworks_base" remote="custom" />
   <remove-project name="LineageOS/android_frameworks_native" />
   <project path="frameworks/native" name="frameworks_native" remote="custom" />
+  <remove-project name="platform/libcore" />
+  <project path="libcore" name="libcore" remote="custom" />
   <remove-project name="LineageOS/android_system_core" />
   <project path="system/core" name="system_core" remote="custom" />
   <remove-project name="platform/system/security" />
