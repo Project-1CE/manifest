@@ -23,6 +23,8 @@
   </project>
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="custom" />
+  <remove-project name="platform/external/libfuse" />
+  <project path="external/libfuse" name="external_libfuse" remote="custom" />
   <remove-project name="LineageOS/android_external_openssh" />
   <project path="external/openssh" name="external_openssh" remote="custom" />
   <remove-project name="LineageOS/android_frameworks_base" />
