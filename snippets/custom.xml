@@ -31,6 +31,8 @@
   <project path="frameworks/native" name="frameworks_native" remote="custom" />
   <remove-project name="platform/libcore" />
   <project path="libcore" name="libcore" remote="custom" />
+  <remove-project name="platform/prebuilts/abi-dumps/vndk" />
+  <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" remote="custom" />
   <remove-project name="LineageOS/android_system_core" />
   <project path="system/core" name="system_core" remote="custom" />
   <remove-project name="platform/system/security" />
