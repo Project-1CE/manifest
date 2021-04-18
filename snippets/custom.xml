@@ -9,6 +9,9 @@
            fetch="ssh://git@github.com/Project-1CE"
            revision="lineage-18.1" />
 
+  <remote  name="gitlab"
+           fetch="https://gitlab.com"/>
+
   <!-- Replace existing repositories -->
   <remove-project name="LineageOS/android" />
   <project path="android" name="manifest" remote="custom" />
@@ -47,5 +50,6 @@
   <!-- Add new repositories -->
 
   <!-- External repositories -->
+  <project name="ProtonAOSP/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="rvc" />
 
 </manifest>
