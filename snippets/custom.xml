@@ -38,6 +38,8 @@
   <project path="frameworks/native" name="frameworks_native" remote="custom" />
   <remove-project name="platform/libcore" />
   <project path="libcore" name="libcore" remote="custom" />
+  <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+  <project path="packages/apps/Trebuchet" name="packages_apps_Trebuchet" remote="custom" />
   <remove-project name="platform/packages/modules/NetworkStack" />
   <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="custom" />
   <remove-project name="platform/prebuilts/abi-dumps/vndk" />
