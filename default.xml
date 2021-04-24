@@ -2,7 +2,8 @@
 <manifest>
 
   <remote  name="github"
-           fetch="https://github.com" />
+           fetch="https://github.com"
+           review="review.project-ice.org" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
