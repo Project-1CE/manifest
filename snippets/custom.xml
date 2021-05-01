@@ -54,6 +54,6 @@
   <!-- Add new repositories -->
 
   <!-- External repositories -->
-  <project name="Project-1CE/vendor_gapps" path="vendor/gapps" remote="gitlab" revision="lineage-18.1" />
+  <project name="Project-1CE/vendor_gapps" path="vendor/gapps" remote="gitlab" revision="lineage-18.1" clone-depth="1" />
 
 </manifest>
