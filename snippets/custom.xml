@@ -26,6 +26,8 @@
   </project>
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="custom" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/external/jemalloc_new" name="external_jemalloc_new" remote="custom" />
   <remove-project name="platform/external/libfuse" />
   <project path="external/libfuse" name="external_libfuse" remote="custom" />
   <remove-project name="LineageOS/android_external_openssh" />
