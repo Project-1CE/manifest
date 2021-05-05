@@ -34,6 +34,8 @@
   <project path="external/openssh" name="external_openssh" remote="custom" />
   <remove-project name="platform/external/sqlite" />
   <project path="external/sqlite" name="external_sqlite" remote="custom" />
+  <remove-project name="platform/external/zlib" />
+  <project path="external/zlib-ng" name="external_zlib-ng" remote="custom" />
   <remove-project name="LineageOS/android_frameworks_base" />
   <project path="frameworks/base" name="frameworks_base" remote="custom" />
   <remove-project name="LineageOS/android_frameworks_native" />
