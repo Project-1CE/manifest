@@ -24,8 +24,6 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <remove-project name="platform/external/arm-optimized-routines" />
-  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="custom" />
   <remove-project name="platform/external/jemalloc_new" />
   <project path="external/external/jemalloc_new" name="external_jemalloc_new" remote="custom" />
   <remove-project name="platform/external/libfuse" />
