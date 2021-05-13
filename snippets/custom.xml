@@ -56,6 +56,8 @@
   <project path="system/core" name="system_core" remote="custom" />
   <remove-project name="platform/system/security" />
   <project path="system/security" name="system_security" remote="custom" />
+  <remove-project name="LineageOS/android_tools_metalava" />
+  <project path="tools/metalava" name="tools_metalava" remote="custom" />
   <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="vendor_lineage" remote="custom" />
 
