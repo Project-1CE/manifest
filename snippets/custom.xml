@@ -2,66 +2,63 @@
 <manifest>
   <!-- Remotes -->
   <remote  name="custom"
-           fetch="https://github.com/Project-1CE"
-           revision="lineage-18.1" />
-
-  <remote  name="custom-priv"
-           fetch="ssh://git@github.com/Project-1CE"
-           revision="lineage-18.1" />
+           fetch="https://github.com/"
+           review="review.project-ice.org"
+           revision="refs/heads/lineage-18.1" />
 
   <remote  name="gitlab"
            fetch="https://gitlab.com"/>
 
   <!-- Replace existing repositories -->
   <remove-project name="LineageOS/android" />
-  <project path="android" name="manifest" remote="custom" />
+  <project path="android" name="Project-1CE/manifest" remote="custom" />
   <remove-project name="LineageOS/android_art" />
-  <project path="art" name="art" remote="custom" />
+  <project path="art" name="Project-1CE/art" remote="custom" />
   <remove-project name="LineageOS/android_bionic" />
-  <project path="bionic" name="bionic" remote="custom" />
+  <project path="bionic" name="Project-1CE/bionic" remote="custom" />
   <remove-project name="LineageOS/android_build_soong" />
-  <project path="build/soong" name="build_soong" remote="custom" >
+  <project path="build/soong" name="Project-1CE/build_soong" remote="custom" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <remove-project name="platform/external/jemalloc_new" />
-  <project path="external/external/jemalloc_new" name="external_jemalloc_new" remote="custom" />
+  <project path="external/external/jemalloc_new" name="Project-1CE/external_jemalloc_new" remote="custom" />
   <remove-project name="platform/external/libfuse" />
-  <project path="external/libfuse" name="external_libfuse" remote="custom" />
+  <project path="external/libfuse" name="Project-1CE/external_libfuse" remote="custom" />
   <remove-project name="platform/external/libjpeg-turbo" />
-  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="custom" />
+  <project path="external/libjpeg-turbo" name="Project-1CE/external_libjpeg-turbo" remote="custom" />
   <remove-project name="platform/external/libpng" />
-  <project path="external/libpng" name="external_libpng" remote="custom" />
+  <project path="external/libpng" name="Project-1CE/external_libpng" remote="custom" />
   <remove-project name="LineageOS/android_external_openssh" />
-  <project path="external/openssh" name="external_openssh" remote="custom" />
+  <project path="external/openssh" name="Project-1CE/external_openssh" remote="custom" />
   <remove-project name="platform/external/sqlite" />
-  <project path="external/sqlite" name="external_sqlite" remote="custom" />
+  <project path="external/sqlite" name="Project-1CE/external_sqlite" remote="custom" />
   <remove-project name="platform/external/zlib" />
-  <project path="external/zlib-ng" name="external_zlib-ng" remote="custom" />
+  <project path="external/zlib-ng" name="Project-1CE/external_zlib-ng" remote="custom" />
   <remove-project name="LineageOS/android_frameworks_base" />
-  <project path="frameworks/base" name="frameworks_base" remote="custom" />
+  <project path="frameworks/base" name="Project-1CE/frameworks_base" remote="custom" />
   <remove-project name="platform/frameworks/libs/systemui" />
-  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="custom" />
+  <project path="frameworks/libs/systemui" name="Project-1CE/frameworks_libs_systemui" remote="custom" />
   <remove-project name="LineageOS/android_frameworks_native" />
-  <project path="frameworks/native" name="frameworks_native" remote="custom" />
+  <project path="frameworks/native" name="Project-1CE/frameworks_native" remote="custom" />
   <remove-project name="platform/libcore" />
-  <project path="libcore" name="libcore" remote="custom" />
+  <project path="libcore" name="Project-1CE/libcore" remote="custom" />
   <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
-  <project path="packages/apps/Trebuchet" name="packages_apps_Trebuchet" remote="custom" />
+  <project path="packages/apps/Trebuchet" name="Project-1CE/packages_apps_Trebuchet" remote="custom" />
   <remove-project name="platform/packages/modules/NetworkStack" />
-  <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="custom" />
+  <project path="packages/modules/NetworkStack" name="Project-1CE/packages_modules_NetworkStack" remote="custom" />
   <remove-project name="platform/prebuilts/abi-dumps/ndk" />
-  <project path="prebuilts/abi-dumps/ndk" name="prebuilts_abi-dumps_ndk" remote="custom" />
+  <project path="prebuilts/abi-dumps/ndk" name="Project-1CE/prebuilts_abi-dumps_ndk" remote="custom" />
   <remove-project name="platform/prebuilts/abi-dumps/vndk" />
-  <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" remote="custom" />
+  <project path="prebuilts/abi-dumps/vndk" name="Project-1CE/prebuilts_abi-dumps_vndk" remote="custom" />
   <remove-project name="LineageOS/android_system_core" />
-  <project path="system/core" name="system_core" remote="custom" />
+  <project path="system/core" name="Project-1CE/system_core" remote="custom" />
   <remove-project name="platform/system/security" />
-  <project path="system/security" name="system_security" remote="custom" />
+  <project path="system/security" name="Project-1CE/system_security" remote="custom" />
   <remove-project name="LineageOS/android_tools_metalava" />
-  <project path="tools/metalava" name="tools_metalava" remote="custom" />
+  <project path="tools/metalava" name="Project-1CE/tools_metalava" remote="custom" />
   <remove-project name="LineageOS/android_vendor_lineage" />
-  <project path="vendor/lineage" name="vendor_lineage" remote="custom" />
+  <project path="vendor/lineage" name="Project-1CE/vendor_lineage" remote="custom" />
 
   <!-- Add new repositories -->
 

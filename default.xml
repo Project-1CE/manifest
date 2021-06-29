@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
-           fetch="https://github.com"
-           review="review.project-ice.org" />
+  <remote  name="lineage"
+           fetch=".."
+           review="review.lineageos.org" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -14,7 +14,7 @@
            revision="refs/tags/android-11.0.0_r38" />
 
   <default revision="refs/heads/lineage-18.1"
-           remote="github"
+           remote="lineage"
            sync-c="true"
            sync-j="4" />
 
