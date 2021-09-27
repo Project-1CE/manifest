@@ -8,6 +8,9 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <remote  name="gitlab"
+           fetch="https://gitlab.com"/>
+
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
@@ -778,6 +781,9 @@
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
 
   <include name="snippets/lineage.xml" />
+
+  <!-- Project ICE snippet -->
+  <include name="snippets/custom.xml"/>
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 </manifest>

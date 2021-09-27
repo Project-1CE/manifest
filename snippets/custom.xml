@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote  name="custom"
+           fetch="https://github.com/"
+           review="review.project-ice.org"
+           revision="refs/heads/lineage-18.1" />
+
+  <!-- Replace existing repositories -->
+  <remove-project name="LineageOS/android" />
+  <project path="android" name="Project-1CE/manifest" remote="custom" />
+  <remove-project name="LineageOS/android_art" />
+  <project path="art" name="Project-1CE/art" remote="custom" />
+  <remove-project name="LineageOS/android_bionic" />
+  <project path="bionic" name="Project-1CE/bionic" remote="custom" />
+  <remove-project name="LineageOS/android_build" />
+  <project path="build/make" name="Project-1CE/build_make" remote="custom" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="LineageOS/android_build_soong" />
+  <project path="build/soong" name="Project-1CE/build_soong" remote="custom" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="Project-1CE/external_jemalloc_new" remote="custom" />
+  <remove-project name="platform/external/libfuse" />
+  <project path="external/libfuse" name="Project-1CE/external_libfuse" remote="custom" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <project path="external/libjpeg-turbo" name="Project-1CE/external_libjpeg-turbo" remote="custom" />
+  <remove-project name="platform/external/libpng" />
+  <project path="external/libpng" name="Project-1CE/external_libpng" remote="custom" />
+  <remove-project name="platform/external/lz4" />
+  <project path="external/lz4" name="Project-1CE/external_lz4" remote="custom" />
+  <remove-project name="LineageOS/android_external_openssh" />
+  <project path="external/openssh" name="Project-1CE/external_openssh" remote="custom" />
+  <remove-project name="platform/external/sqlite" />
+  <project path="external/sqlite" name="Project-1CE/external_sqlite" remote="custom" />
+  <remove-project name="platform/external/zlib" />
+  <project path="external/zlib-ng" name="Project-1CE/external_zlib-ng" remote="custom" />
+  <remove-project name="LineageOS/android_frameworks_av" />
+  <project path="frameworks/av" name="Project-1CE/frameworks_av" remote="custom" />
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/base" name="Project-1CE/frameworks_base" remote="custom" />
+  <remove-project name="platform/frameworks/libs/systemui" />
+  <project path="frameworks/libs/systemui" name="Project-1CE/frameworks_libs_systemui" remote="custom" />
+  <remove-project name="LineageOS/android_frameworks_native" />
+  <project path="frameworks/native" name="Project-1CE/frameworks_native" remote="custom" />
+  <remove-project name="platform/libcore" />
+  <project path="libcore" name="Project-1CE/libcore" remote="custom" />
+  <remove-project name="LineageOS/android_lineage-sdk" />
+  <project path="lineage-sdk" name="Project-1CE/lineage-sdk" remote="custom" />
+  <remove-project name="LineageOS/android_packages_apps_LineageParts" />
+  <project path="packages/apps/LineageParts" name="Project-1CE/packages_apps_LineageParts" remote="custom" />
+  <remove-project name="LineageOS/android_packages_apps_SecureElement" />
+  <project path="packages/apps/SecureElement" name="Project-1CE/packages_apps_SecureElement" remote="custom" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="Project-1CE/packages_apps_Settings" remote="custom" />
+  <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+  <project path="packages/apps/Trebuchet" name="Project-1CE/packages_apps_Trebuchet" remote="custom" />
+  <remove-project name="LineageOS/android_packages_apps_Updater" />
+  <project path="packages/apps/Updater" name="Project-1CE/packages_apps_Updater" remote="custom" />
+  <remove-project name="platform/packages/modules/NetworkStack" />
+  <project path="packages/modules/NetworkStack" name="Project-1CE/packages_modules_NetworkStack" remote="custom" />
+  <remove-project name="platform/prebuilts/abi-dumps/ndk" />
+  <project path="prebuilts/abi-dumps/ndk" name="Project-1CE/prebuilts_abi-dumps_ndk" remote="custom" />
+  <remove-project name="platform/prebuilts/abi-dumps/vndk" />
+  <project path="prebuilts/abi-dumps/vndk" name="Project-1CE/prebuilts_abi-dumps_vndk" remote="custom" />
+  <remove-project name="platform/system/apex" />
+  <project path="system/apex" name="Project-1CE/system_apex" remote="custom" />
+  <remove-project name="LineageOS/android_system_core" />
+  <project path="system/core" name="Project-1CE/system_core" remote="custom" />
+  <remove-project name="platform/system/security" />
+  <project path="system/security" name="Project-1CE/system_security" remote="custom" />
+  <remove-project name="LineageOS/android_system_sepolicy" />
+  <project path="system/sepolicy" name="Project-1CE/system_sepolicy" remote="custom" />
+  <remove-project name="LineageOS/android_tools_metalava" />
+  <project path="tools/metalava" name="Project-1CE/tools_metalava" remote="custom" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <project path="vendor/lineage" name="Project-1CE/vendor_lineage" remote="custom" />
+
+  <!-- Add new repositories -->
+  <project path="external/erofs-utils" name="Project-1CE/external_erofs-utils" remote="custom" />
+
+  <!-- External repositories -->
+  <project name="Project-1CE/external_asus_stitchimage" path="external/asus/stitchimage" remote="gitlab" revision="lineage-18.1" />
+  <project name="Project-1CE/external_faceunlock" path="external/faceunlock" remote="gitlab" revision="lineage-18.1" />
+  <project name="Project-1CE/packages_apps_FaceUnlockService" path="packages/apps/FaceUnlockService" remote="gitlab" revision="lineage-18.1" />
+  <project name="Project-1CE/vendor_gapps" path="vendor/gapps" remote="gitlab" revision="lineage-18.1" clone-depth="1" />
+</manifest>
