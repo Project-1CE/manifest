@@ -76,8 +76,6 @@
   <project path="system/apex" name="Project-1CE/system_apex" remote="custom" />
   <remove-project name="LineageOS/android_system_core" />
   <project path="system/core" name="Project-1CE/system_core" remote="custom" />
-  <remove-project name="platform/system/security" />
-  <project path="system/security" name="Project-1CE/system_security" remote="custom" />
   <remove-project name="LineageOS/android_system_sepolicy" />
   <project path="system/sepolicy" name="Project-1CE/system_sepolicy" remote="custom" />
   <remove-project name="LineageOS/android_tools_metalava" />
