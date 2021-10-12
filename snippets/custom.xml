@@ -68,6 +68,8 @@
   <project path="packages/apps/Updater" name="Project-1CE/packages_apps_Updater" remote="custom" />
   <remove-project name="platform/packages/modules/NetworkStack" />
   <project path="packages/modules/NetworkStack" name="Project-1CE/packages_modules_NetworkStack" remote="custom" />
+  <remove-project name="LineageOS/android_packages_providers_MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="Project-1CE/packages_providers_MediaProvider" remote="custom" />
   <remove-project name="platform/prebuilts/abi-dumps/ndk" />
   <project path="prebuilts/abi-dumps/ndk" name="Project-1CE/prebuilts_abi-dumps_ndk" remote="custom" />
   <remove-project name="platform/prebuilts/abi-dumps/vndk" />
