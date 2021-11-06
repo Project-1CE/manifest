@@ -2,9 +2,55 @@
 <manifest>
 
   <!-- Replace existing repos -->
+  <project path="art" name="Project-1CE/art" />
+  <project path="bionic" name="Project-1CE/bionic" />
+  <project path="bootable/recovery" name="Project-1CE/bootable_recovery" />
+  <project path="build/make" name="Project-1CE/build_make">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="Project-1CE/build_soong">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="device/qcom/common" name="Project-1CE/device_qcom_common">
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk" />
+  </project>
+  <project path="device/qcom/kernelscripts" name="Project-1CE/device_qcom_kernelscripts">
+    <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk" />
+  </project>
+  <!-- <project path="device/qcom/sepolicy" name="Project-1CE/device_qcom_sepolicy" /> -->
+  <project path="device/qcom/sepolicy_vndr" name="Project-1CE/device_qcom_sepolicy_vndr" />
+  <project path="device/qcom/vendor-common" name="Project-1CE/device_qcom_vendor-common" />
+  <project path="external/fastrpc" name="Project-1CE/external_fastrpc" />
+  <project path="frameworks/base" name="Project-1CE/frameworks_base" />
+  <project path="frameworks/native" name="Project-1CE/frameworks_native" />
+  <project path="hardware/libhardware" name="Project-1CE/hardware_libhardware" />
+  <!-- <project path="hardware/qcom/wlan" name="Project-1CE/hardware_qcom_wlan" /> -->
+  <project path="system/core" name="Project-1CE/system_core" />
+  <project path="system/sepolicy" name="Project-1CE/system_sepolicy" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_display">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+  </project>
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="Project-1CE/vendor_qcom_opensource_data-ipa-cfg-mgr" />
+  <!-- <project path="vendor/qcom/opensource/dataservices" name="Project-1CE/vendor_qcom_opensource_dataservices" /> -->
+  <!-- <project path="vendor/qcom/opensource/interfaces" name="Project-1CE/vendor_qcom_opensource_interfaces" /> -->
+  <project path="vendor/qcom/opensource/power" name="Project-1CE/vendor_qcom_opensource_power" />
+  <project path="vendor/qcom/opensource/vibrator" name="Project-1CE/vendor_qcom_opensource_vibrator" />
 
   <!-- Add new repos -->
+  <project path="tools/extract-utils" name="Project-1CE/tools_extract-utils" />
+  <project path="vendor/ice" name="Project-1CE/vendor_ice" />
 
   <!-- External repos -->
+  <project path="vendor/qcom/common" name="Project-1CE/proprietary_vendor_qcom_common" remote="gitlab" revision="sugisawa" />
+  <project path="vendor/qcom/sdclang" name="Project-1CE/proprietary_vendor_qcom_sdclang" remote="gitlab" revision="sugisawa" clone-depth="1" />
 
 </manifest>
