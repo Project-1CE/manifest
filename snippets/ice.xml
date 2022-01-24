@@ -57,6 +57,7 @@
   <project path="vendor/ice" name="Project-1CE/vendor_ice" />
 
   <!-- External repos -->
+  <project path="vendor/gapps" name="Project-1CE/vendor_gapps" remote="gitlab" revision="sugisawa" clone-depth="1" />
   <project path="vendor/qcom/common" name="Project-1CE/proprietary_vendor_qcom_common" remote="gitlab" revision="sugisawa" />
   <project path="vendor/qcom/sdclang" name="Project-1CE/proprietary_vendor_qcom_sdclang" remote="gitlab" revision="sugisawa" clone-depth="1" />
 
