@@ -28,6 +28,9 @@
   <remove-project name="device/google/vrservices" />
   <remove-project name="device/sample" />
 
+  <remove-project name="platform/prebuilts/android-emulator" />
+  <remove-project name="platform/prebuilts/qemu-kernel" />
+
   <remove-project name="platform/packages/apps/Mms" />
   <remove-project name="platform/packages/apps/SnapdragonCamera" />
   <remove-project name="platform/packages/apps/SnapdragonMusic" />
@@ -39,6 +42,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <!-- <remove-project name="device/qcom/sepolicy" /> -->
+  <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/fastrpc" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
