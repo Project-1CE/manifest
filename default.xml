@@ -9,11 +9,11 @@
            fetch="https://gitlab.com" />
 
   <remote  name="caf_system"
-           fetch="https://oregon.source.codeaurora.org/quic/la"
+           fetch="https://git.codelinaro.org/clo/la"
            revision="refs/tags/LA.QSSI.12.0.r1-05800.01-qssi.0" />
 
   <remote  name="caf_vendor"
-           fetch="https://oregon.source.codeaurora.org/quic/la"
+           fetch="https://git.codelinaro.org/clo/la"
            revision="refs/tags/LA.UM.9.14.r1-18600.02-LAHAINA.QSSI12.0" />
 
   <default revision="refs/heads/sugisawa"
