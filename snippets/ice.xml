@@ -41,6 +41,7 @@
   <project path="packages/services/Telephony" name="Project-1CE/packages_services_Telephony" />
   <project path="system/core" name="Project-1CE/system_core" />
   <project path="system/sepolicy" name="Project-1CE/system_sepolicy" />
+  <project path="system/update_engine" name="Project-1CE/system_update_engine" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_bluetooth" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_display">
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
@@ -54,6 +55,7 @@
 
   <!-- Add new repos -->
   <project path="packages/apps/SimpleDeviceConfig" name="Project-1CE/packages_apps_SimpleDeviceConfig" />
+  <project path="packages/apps/Updater" name="Project-1CE/packages_apps_Updater" />
   <project path="tools/extract-utils" name="Project-1CE/tools_extract-utils" />
   <project path="vendor/ice" name="Project-1CE/vendor_ice" />
 
