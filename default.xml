@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
+  <remote  name="ice"
            fetch=".."
            review="review.project-ice.org" />
+
+  <remote  name="github"
+           fetch="https://github.com" />
 
   <remote  name="gitlab"
            fetch="https://gitlab.com" />
@@ -17,7 +20,7 @@
            revision="refs/tags/LA.UM.9.14.r1-18600.02-LAHAINA.QSSI12.0" />
 
   <default revision="refs/heads/sugisawa"
-           remote="github"
+           remote="ice"
            sync-c="true"
            sync-j="4" />
 
