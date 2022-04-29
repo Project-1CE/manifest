@@ -36,10 +36,10 @@
   <remove-project name="platform/packages/apps/SnapdragonMusic" />
   <remove-project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" />
 
-  <remove-project name="platform/art" />
-  <remove-project name="platform/bionic" />
+  <!-- <remove-project name="platform/art" /> -->
+  <!-- <remove-project name="platform/bionic" /> -->
   <remove-project name="platform/bootable/recovery" />
-  <remove-project name="platform/build" />
+  <remove-project name="platform/build_repo" />
   <remove-project name="platform/build/soong" />
   <!-- <remove-project name="device/qcom/sepolicy" /> -->
   <remove-project name="platform/external/chromium-webview" />

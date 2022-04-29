@@ -2,8 +2,8 @@
 <manifest>
 
   <!-- Replace existing repos -->
-  <project path="art" name="Project-1CE/art" />
-  <project path="bionic" name="Project-1CE/bionic" />
+  <!-- <project path="art" name="Project-1CE/art" /> -->
+  <!-- <project path="bionic" name="Project-1CE/bionic" /> -->
   <project path="bootable/recovery" name="Project-1CE/bootable_recovery" />
   <project path="build/make" name="Project-1CE/build_make">
     <copyfile src="core/root.mk" dest="Makefile" />
