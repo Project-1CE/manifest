@@ -21,17 +21,20 @@
   <project path="device/qcom/common" name="Project-1CE/device_qcom_common">
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk" />
   </project>
-  <project path="device/qcom/kernelscripts" name="Project-1CE/device_qcom_kernelscripts">
+  <project revision="sugisawa" path="device/qcom/kernelscripts" name="Project-1CE/device_qcom_kernelscripts">
     <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk" />
   </project>
   <!-- <project path="device/qcom/sepolicy" name="Project-1CE/device_qcom_sepolicy" /> -->
-  <project path="device/qcom/sepolicy_vndr" name="Project-1CE/device_qcom_sepolicy_vndr" />
-  <project path="device/qcom/vendor-common" name="Project-1CE/device_qcom_vendor-common" />
+  <project revision="sugisawa" path="device/qcom/sepolicy_vndr" name="Project-1CE/device_qcom_sepolicy_vndr" />
+  <project revision="sugisawa" path="device/qcom/vendor-common" name="Project-1CE/device_qcom_vendor-common" />
   <project path="external/fastrpc" name="Project-1CE/external_fastrpc" />
+  <project path="external/google-fonts/cutive-mono" name="Project-1CE/external_google-fonts_cutive-mono" />
+  <project path="external/noto-fonts" name="Project-1CE/external_noto-fonts" />
+  <project path="external/roboto-fonts" name="Project-1CE/external_roboto-fonts" />
   <project path="frameworks/base" name="Project-1CE/frameworks_base" />
   <project path="frameworks/native" name="Project-1CE/frameworks_native" />
   <project path="hardware/libhardware" name="Project-1CE/hardware_libhardware" />
-  <project path="hardware/qcom/bootctrl" name="Project-1CE/hardware_qcom_bootctrl" />
+  <project revision="sugisawa" path="hardware/qcom/bootctrl" name="Project-1CE/hardware_qcom_bootctrl" />
   <!-- <project path="hardware/qcom/wlan" name="Project-1CE/hardware_qcom_wlan" /> -->
   <project path="packages/apps/DeskClock" name="Project-1CE/packages_apps_DeskClock" />
   <project path="packages/apps/Launcher3" name="Project-1CE/packages_apps_Launcher3" />
@@ -42,17 +45,18 @@
   <project path="system/core" name="Project-1CE/system_core" />
   <project path="system/sepolicy" name="Project-1CE/system_sepolicy" />
   <project path="system/update_engine" name="Project-1CE/system_update_engine" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="Project-1CE/vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_bluetooth" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_display">
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
   </project>
-  <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_wfd" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="Project-1CE/vendor_qcom_opensource_data-ipa-cfg-mgr" />
+  <project revision="sugisawa" path="vendor/qcom/opensource/commonsys-intf/wfd" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_wfd" />
+  <project revision="sugisawa" path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="Project-1CE/vendor_qcom_opensource_data-ipa-cfg-mgr" />
   <!-- <project path="vendor/qcom/opensource/dataservices" name="Project-1CE/vendor_qcom_opensource_dataservices" /> -->
   <!-- <project path="vendor/qcom/opensource/interfaces" name="Project-1CE/vendor_qcom_opensource_interfaces" /> -->
-  <project path="vendor/qcom/opensource/power" name="Project-1CE/vendor_qcom_opensource_power" />
-  <project path="vendor/qcom/opensource/vibrator" name="Project-1CE/vendor_qcom_opensource_vibrator" />
+  <project revision="sugisawa" path="vendor/qcom/opensource/power" name="Project-1CE/vendor_qcom_opensource_power" />
+  <project revision="sugisawa" path="vendor/qcom/opensource/vibrator" name="Project-1CE/vendor_qcom_opensource_vibrator" />
 
   <!-- Add new repos -->
   <project path="packages/apps/SimpleDeviceConfig" name="Project-1CE/packages_apps_SimpleDeviceConfig" />
@@ -62,8 +66,8 @@
 
   <!-- External repos -->
   <project path="external/chromium-webview" name="LineageOS/android_external_chromium-webview" remote="github" revision="master" clone-depth="1" />
-  <project path="vendor/gapps" name="Project-1CE/vendor_gapps" remote="gitlab" revision="sugisawa" clone-depth="1" />
-  <project path="vendor/qcom/common" name="Project-1CE/proprietary_vendor_qcom_common" remote="gitlab" revision="sugisawa" />
+  <project path="vendor/gapps" name="Project-1CE/vendor_gapps" remote="gitlab" revision="sugisawa-mr1" clone-depth="1" />
+  <project path="vendor/qcom/common" name="Project-1CE/proprietary_vendor_qcom_common" remote="gitlab" revision="sugisawa-mr1" />
   <project path="vendor/qcom/sdclang" name="Project-1CE/proprietary_vendor_qcom_sdclang" remote="gitlab" revision="sugisawa" clone-depth="1" />
 
 </manifest>

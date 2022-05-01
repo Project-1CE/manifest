@@ -39,11 +39,14 @@
   <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/bootable/recovery" />
-  <remove-project name="platform/build" />
+  <remove-project name="platform/build_repo" />
   <remove-project name="platform/build/soong" />
   <!-- <remove-project name="device/qcom/sepolicy" /> -->
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/fastrpc" />
+  <remove-project name="platform/external/google-fonts/cutive-mono" />
+  <remove-project name="platform/external/noto-fonts" />
+  <remove-project name="platform/external/roboto-fonts" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/hardware/libhardware" />
@@ -59,6 +62,7 @@
   <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
   <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
   <!-- <remove-project name="platform/vendor/qcom-opensource/interfaces" /> -->
+  <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
 
   <!-- Vendor -->
   <remove-project name="kernel/msm-5.4" />

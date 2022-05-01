@@ -35,29 +35,30 @@
   <project name="device/qcom/qssi" remote="caf_system" />
   <project name="device/qcom/qssi_32" remote="caf_system" />
   <project name="device/qcom/qssi_32go" remote="caf_system" />
+  <project name="device/qcom/qssi_lite" remote="caf_system" />
   <project name="device/qcom/sepolicy" remote="caf_system" />
   <project name="device/sample" remote="caf_system" />
   <project name="kernel/configs" remote="caf_system" />
-  <project name="kernel/prebuilts/4.19/arm64" remote="caf_system" />
-  <project name="kernel/prebuilts/5.10/arm64" remote="caf_system" />
-  <project name="kernel/prebuilts/5.10/x86-64" path="kernel/prebuilts/5.10/x86_64" remote="caf_system" />
-  <project name="kernel/prebuilts/5.4/arm64" remote="caf_system" />
-  <project name="kernel/prebuilts/5.4/x86-64" path="kernel/prebuilts/5.4/x86_64" remote="caf_system" />
-  <project name="kernel/prebuilts/common-modules/virtual-device/4.19/arm64" remote="caf_system" />
-  <project name="kernel/prebuilts/common-modules/virtual-device/4.19/x86-64" remote="caf_system" />
-  <project name="kernel/prebuilts/common-modules/virtual-device/5.10/arm64" remote="caf_system" />
-  <project name="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" remote="caf_system" />
-  <project name="kernel/prebuilts/common-modules/virtual-device/5.4/arm64" remote="caf_system" />
-  <project name="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" remote="caf_system" />
-  <project name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" remote="caf_system" />
-  <project name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" remote="caf_system" />
-  <project name="kernel/prebuilts/mainline/arm64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/4.19/arm64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/5.10/arm64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/5.10/x86-64" path="kernel/prebuilts/5.10/x86_64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/5.4/arm64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/5.4/x86-64" path="kernel/prebuilts/5.4/x86_64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/4.19/arm64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/4.19/x86-64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.10/arm64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.4/arm64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/mainline/arm64" remote="caf_system" />
   <project name="kernel/tests" remote="caf_system" />
   <project name="platform/art" path="art" remote="caf_system" />
   <project name="platform/bionic" path="bionic" remote="caf_system" />
   <project name="platform/bootable/libbootloader" path="bootable/libbootloader" remote="caf_system" />
   <project name="platform/bootable/recovery" path="bootable/recovery" remote="caf_system" />
-  <project name="platform/build" path="build/make" remote="caf_system">
+  <project name="platform/build_repo" path="build/make" remote="caf_system">
     <copyfile dest="Makefile" src="core/root.mk" />
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
@@ -87,10 +88,10 @@
   <project name="platform/external/ImageMagick" path="external/ImageMagick" remote="caf_system" />
   <project name="platform/external/OpenCSD" path="external/OpenCSD" remote="caf_system" />
   <project name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp" remote="caf_system" />
+  <project name="platform/external/TestParameterInjector" path="external/TestParameterInjector" remote="caf_system" />
   <project name="platform/external/XNNPACK" path="external/XNNPACK" remote="caf_system" />
   <project name="platform/external/aac" path="external/aac" remote="caf_system" />
   <project name="platform/external/abseil-cpp" path="external/abseil-cpp" remote="caf_system" />
-  <project name="platform/external/adhd" path="external/adhd" remote="caf_system" />
   <project name="platform/external/adt-infra" path="external/adt-infra" remote="caf_system" />
   <project name="platform/external/android-clat" path="external/android-clat" remote="caf_system" />
   <project name="platform/external/androidplot" path="external/androidplot" remote="caf_system" />
@@ -453,6 +454,7 @@
   <project name="platform/external/rust/crates/futures-task" path="external/rust/crates/futures-task" remote="caf_system" />
   <project name="platform/external/rust/crates/futures-util" path="external/rust/crates/futures-util" remote="caf_system" />
   <project name="platform/external/rust/crates/gdbstub" path="external/rust/crates/gdbstub" remote="caf_system" />
+  <project name="platform/external/rust/crates/gdbstub_arch" path="external/rust/crates/gdbstub_arch" remote="caf_system" />
   <project name="platform/external/rust/crates/getrandom" path="external/rust/crates/getrandom" remote="caf_system" />
   <project name="platform/external/rust/crates/glob" path="external/rust/crates/glob" remote="caf_system" />
   <project name="platform/external/rust/crates/grpcio" path="external/rust/crates/grpcio" remote="caf_system" />
@@ -624,13 +626,12 @@
   <project name="platform/external/vboot_reference" path="external/vboot_reference" remote="caf_system" />
   <project name="platform/external/virglrenderer" path="external/virglrenderer" remote="caf_system" />
   <project name="platform/external/vixl" path="external/vixl" remote="caf_system" />
-  <project name="platform/external/vm_tools/p9" path="external/vm_tools/p9" remote="caf_system" />
   <project name="platform/external/vogar" path="external/vogar" remote="caf_system" />
   <project name="platform/external/volley" path="external/volley" remote="caf_system" />
   <project name="platform/external/vulkan-headers" path="external/vulkan-headers" remote="caf_system" />
   <project name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" remote="caf_system" />
   <project name="platform/external/walt" path="external/walt" remote="caf_system" />
-  <project name="platform/external/wayland" path="external/wayland" remote="caf_system" />
+  <project name="platform/external/wayland_repo" path="external/wayland" remote="caf_system" />
   <project name="platform/external/wayland-protocols" path="external/wayland-protocols" remote="caf_system" />
   <project name="platform/external/webp" path="external/webp" remote="caf_system" />
   <project name="platform/external/webrtc" path="external/webrtc" remote="caf_system" />
@@ -875,15 +876,16 @@
   <project name="platform/prebuilts/ndk" path="prebuilts/ndk" remote="caf_system" />
   <project name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" remote="caf_system" />
   <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" remote="caf_system" />
-  <project name="platform/prebuilts/r8" path="prebuilts/r8" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/r8" path="prebuilts/r8" remote="caf_system" />
   <project name="platform/prebuilts/remoteexecution-client" path="prebuilts/remoteexecution-client" remote="caf_system" />
   <project name="platform/prebuilts/runtime" path="prebuilts/runtime" remote="caf_system" />
-  <project name="platform/prebuilts/rust" path="prebuilts/rust" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/rust" path="prebuilts/rust" remote="caf_system" />
   <project name="platform/prebuilts/sdk" path="prebuilts/sdk" remote="caf_system" />
   <project name="platform/prebuilts/tools" path="prebuilts/tools" remote="caf_system" />
   <project name="platform/prebuilts/vndk/v28" path="prebuilts/vndk/v28" remote="caf_system" />
   <project name="platform/prebuilts/vndk/v29" path="prebuilts/vndk/v29" remote="caf_system" />
   <project name="platform/prebuilts/vndk/v30" path="prebuilts/vndk/v30" remote="caf_system" />
+  <project name="platform/prebuilts/vndk/v31" path="prebuilts/vndk/v31" remote="caf_system" />
   <project name="platform/sdk" path="sdk" remote="caf_system" />
   <project name="platform/system/apex" path="system/apex" remote="caf_system" />
   <project name="platform/system/bpf" path="system/bpf" remote="caf_system" />
