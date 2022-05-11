@@ -45,8 +45,10 @@
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/fastrpc" />
   <remove-project name="platform/external/google-fonts/cutive-mono" />
+  <remove-project name="platform/external/jemalloc_new" />
   <remove-project name="platform/external/noto-fonts" />
   <remove-project name="platform/external/roboto-fonts" />
+  <remove-project name="platform/external/zlib" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/hardware/libhardware" />
