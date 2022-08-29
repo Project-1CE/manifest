@@ -35,31 +35,34 @@
   <project name="device/qcom/qssi" remote="caf_system" />
   <project name="device/qcom/qssi_32" remote="caf_system" />
   <project name="device/qcom/qssi_32go" remote="caf_system" />
-  <project name="device/qcom/qssi_lite" remote="caf_system" />
   <project name="device/qcom/sepolicy" remote="caf_system" />
   <project name="device/sample" remote="caf_system" />
   <project name="kernel/configs" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/4.19/arm64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/5.10/arm64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/5.10/x86-64" path="kernel/prebuilts/5.10/x86_64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/5.15/arm64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/5.15/x86-64" path="kernel/prebuilts/5.15/x86_64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/5.4/arm64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/5.4/x86-64" path="kernel/prebuilts/5.4/x86_64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/4.19/arm64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/4.19/x86-64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.10/arm64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.15/arm64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.15/x86-64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.4/arm64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" remote="caf_system" />
   <project clone-depth="1" name="kernel/prebuilts/mainline/arm64" remote="caf_system" />
+  <project clone-depth="1" name="kernel/prebuilts/mainline/x86-64" path="kernel/prebuilts/mainline/x86_64" remote="caf_system" />
   <project name="kernel/tests" remote="caf_system" />
   <project name="platform/art" path="art" remote="caf_system" />
   <project name="platform/bionic" path="bionic" remote="caf_system" />
   <project name="platform/bootable/libbootloader" path="bootable/libbootloader" remote="caf_system" />
   <project name="platform/bootable/recovery" path="bootable/recovery" remote="caf_system" />
   <project name="platform/build_repo" path="build/make" remote="caf_system">
-    <copyfile dest="Makefile" src="core/root.mk" />
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
     <linkfile dest="build/core" src="core" />
@@ -72,13 +75,13 @@
     <linkfile dest="tools/bazel" src="bazel.sh" />
     <linkfile dest="BUILD" src="bazel.BUILD" />
   </project>
+  <project name="platform/build/bazel_common_rules" path="build/bazel_common_rules" remote="caf_system" />
   <project name="platform/build/blueprint" path="build/blueprint" remote="caf_system" />
   <project name="platform/build/pesto" path="build/pesto" remote="caf_system" />
   <project name="platform/build/soong" path="build/soong" remote="caf_system">
     <linkfile dest="Android.bp" src="root.bp" />
     <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
-  <project name="platform/compatibility/cdd" path="compatibility/cdd" remote="caf_system" />
   <project clone-depth="1" name="platform/cts" path="cts" remote="caf_system" />
   <project name="platform/dalvik" path="dalvik" remote="caf_system" />
   <project name="platform/developers/build" path="developers/build" remote="caf_system" />
@@ -110,12 +113,14 @@
   <project name="platform/external/auto" path="external/auto" remote="caf_system" />
   <project name="platform/external/autotest" path="external/autotest" remote="caf_system" />
   <project name="platform/external/avb" path="external/avb" remote="caf_system" />
+  <project name="platform/external/bazel-skylib" path="external/bazel-skylib" remote="caf_system" />
   <project name="platform/external/bazelbuild-rules_android" path="external/bazelbuild-rules_android" remote="caf_system" />
   <project name="platform/external/bc" path="external/bc" remote="caf_system" />
   <project name="platform/external/bcc" path="external/bcc" remote="caf_system" />
   <project name="platform/external/blktrace" path="external/blktrace" remote="caf_system" />
   <project name="platform/external/boringssl" path="external/boringssl" remote="caf_system" />
   <project name="platform/external/bouncycastle" path="external/bouncycastle" remote="caf_system" />
+  <project name="platform/external/bpftool" path="external/bpftool" remote="caf_system" />
   <project name="platform/external/brotli" path="external/brotli" remote="caf_system" />
   <project name="platform/external/bsdiff" path="external/bsdiff" remote="caf_system" />
   <project name="platform/external/bzip2" path="external/bzip2" remote="caf_system" />
@@ -153,7 +158,6 @@
   <project clone-depth="1" name="platform/external/dokka" path="external/dokka" remote="caf_system" />
   <project name="platform/external/downloader" path="external/downloader" remote="caf_system" />
   <project name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" remote="caf_system" />
-  <project name="platform/external/drrickorang" path="external/drrickorang" remote="caf_system" />
   <project name="platform/external/dtc" path="external/dtc" remote="caf_system" />
   <project name="platform/external/dynamic_depth" path="external/dynamic_depth" remote="caf_system" />
   <project name="platform/external/e2fsprogs" path="external/e2fsprogs" remote="caf_system" />
@@ -165,6 +169,7 @@
   <project name="platform/external/error_prone" path="external/error_prone" remote="caf_system" />
   <project name="platform/external/escapevelocity" path="external/escapevelocity" remote="caf_system" />
   <project name="platform/external/ethtool" path="external/ethtool" remote="caf_system" />
+  <project name="platform/external/exfatprogs" path="external/exfatprogs" remote="caf_system" />
   <project name="platform/external/exoplayer" path="external/exoplayer" remote="caf_system" />
   <project name="platform/external/expat" path="external/expat" remote="caf_system" />
   <project name="platform/external/f2fs-tools" path="external/f2fs-tools" remote="caf_system" />
@@ -184,8 +189,10 @@
   <project name="platform/external/geojson-jackson" path="external/geojson-jackson" remote="caf_system" />
   <project name="platform/external/geonames" path="external/geonames" remote="caf_system" />
   <project name="platform/external/gflags" path="external/gflags" remote="caf_system" />
+  <project name="platform/external/gfxstream-protocols" path="external/gfxstream-protocols" remote="caf_system" />
   <project name="platform/external/giflib" path="external/giflib" remote="caf_system" />
   <project name="platform/external/glide" path="external/glide" remote="caf_system" />
+  <project name="platform/external/go-cmp" path="external/go-cmp" remote="caf_system" />
   <project name="platform/external/golang-protobuf" path="external/golang-protobuf" remote="caf_system" />
   <project name="platform/external/google-benchmark" path="external/google-benchmark" remote="caf_system" />
   <project name="platform/external/google-breakpad" path="external/google-breakpad" remote="caf_system" />
@@ -237,6 +244,7 @@
   <project name="platform/external/javapoet" path="external/javapoet" remote="caf_system" />
   <project name="platform/external/javasqlite" path="external/javasqlite" remote="caf_system" />
   <project name="platform/external/javassist" path="external/javassist" remote="caf_system" />
+  <project name="platform/external/jazzer-api" path="external/jazzer-api" remote="caf_system" />
   <project name="platform/external/jcommander" path="external/jcommander" remote="caf_system" />
   <project name="platform/external/jdiff" path="external/jdiff" remote="caf_system" />
   <project name="platform/external/jemalloc_new" path="external/jemalloc_new" remote="caf_system" />
@@ -261,11 +269,13 @@
   <project name="platform/external/libaom" path="external/libaom" remote="caf_system" />
   <project name="platform/external/libavc" path="external/libavc" remote="caf_system" />
   <project name="platform/external/libbackup" path="external/libbackup" remote="caf_system" />
+  <project name="platform/external/libbpf" path="external/libbpf" remote="caf_system" />
   <project name="platform/external/libbrillo" path="external/libbrillo" remote="caf_system" />
   <project name="platform/external/libcap" path="external/libcap" remote="caf_system" />
   <project name="platform/external/libcap-ng" path="external/libcap-ng" remote="caf_system" />
   <project name="platform/external/libchrome" path="external/libchrome" remote="caf_system" />
   <project name="platform/external/libchromeos-rs" path="external/libchromeos-rs" remote="caf_system" />
+  <project name="platform/external/libconfig" path="external/libconfig" remote="caf_system" />
   <project name="platform/external/libcppbor" path="external/libcppbor" remote="caf_system" />
   <project name="platform/external/libcups" path="external/libcups" remote="caf_system" />
   <project name="platform/external/libcxx" path="external/libcxx" remote="caf_system" />
@@ -291,12 +301,16 @@
   <project name="platform/external/libnl" path="external/libnl" remote="caf_system" />
   <project name="platform/external/libogg" path="external/libogg" remote="caf_system" />
   <project name="platform/external/libopus" path="external/libopus" remote="caf_system" />
+  <project name="platform/external/libpalmrejection" path="external/libpalmrejection" remote="caf_system" />
   <project name="platform/external/libpcap" path="external/libpcap" remote="caf_system" />
   <project name="platform/external/libphonenumber" path="external/libphonenumber" remote="caf_system" />
   <project name="platform/external/libpng" path="external/libpng" remote="caf_system" />
   <project name="platform/external/libprotobuf-mutator" path="external/libprotobuf-mutator" remote="caf_system" />
   <project name="platform/external/libsrtp2" path="external/libsrtp2" remote="caf_system" />
   <project name="platform/external/libtextclassifier" path="external/libtextclassifier" remote="caf_system" />
+  <project name="platform/external/libtraceevent" path="external/libtraceevent" remote="caf_system" />
+  <project name="platform/external/libtracefs" path="external/libtracefs" remote="caf_system" />
+  <project name="platform/external/liburing" path="external/liburing" remote="caf_system" />
   <project name="platform/external/libusb" path="external/libusb" remote="caf_system" />
   <project name="platform/external/libutf" path="external/libutf" remote="caf_system" />
   <project name="platform/external/libvpx" path="external/libvpx" remote="caf_system" />
@@ -322,6 +336,8 @@
   <project name="platform/external/minigbm" path="external/minigbm" remote="caf_system" />
   <project name="platform/external/minijail" path="external/minijail" remote="caf_system" />
   <project name="platform/external/mksh" path="external/mksh" remote="caf_system" />
+  <project name="platform/external/mobly-bundled-snippets" path="external/mobly-bundled-snippets" remote="caf_system" />
+  <project name="platform/external/mobly-snippet-lib" path="external/mobly-snippet-lib" remote="caf_system" />
   <project name="platform/external/mockftpserver" path="external/mockftpserver" remote="caf_system" />
   <project name="platform/external/mockito" path="external/mockito" remote="caf_system" />
   <project name="platform/external/mockwebserver" path="external/mockwebserver" remote="caf_system" />
@@ -330,6 +346,7 @@
   <project name="platform/external/ms-tpm-20-ref" path="external/ms-tpm-20-ref" remote="caf_system" />
   <project name="platform/external/mtools" path="external/mtools" remote="caf_system" />
   <project name="platform/external/mtpd" path="external/mtpd" remote="caf_system" />
+  <project name="platform/external/musl" path="external/musl" remote="caf_system" />
   <project name="platform/external/nanohttpd" path="external/nanohttpd" remote="caf_system" />
   <project name="platform/external/nanopb-c" path="external/nanopb-c" remote="caf_system" />
   <project name="platform/external/naver-fonts" path="external/naver-fonts" remote="caf_system" />
@@ -340,18 +357,24 @@
   <project name="platform/external/nist-sip" path="external/nist-sip" remote="caf_system" />
   <project name="platform/external/nos/host/generic" path="external/nos/host/generic" remote="caf_system" />
   <project name="platform/external/noto-fonts" path="external/noto-fonts" remote="caf_system" />
+  <project name="platform/external/nullaway" path="external/nullaway" remote="caf_system" />
   <project name="platform/external/oauth" path="external/oauth" remote="caf_system" />
+  <project name="platform/external/obex" path="external/obex" remote="caf_system" />
   <project name="platform/external/objenesis" path="external/objenesis" remote="caf_system" />
   <project name="platform/external/oboe" path="external/oboe" remote="caf_system" />
+  <project name="platform/external/obstack" path="external/obstack" remote="caf_system" />
   <project name="platform/external/oj-libjdwp" path="external/oj-libjdwp" remote="caf_system" />
   <project name="platform/external/okhttp" path="external/okhttp" remote="caf_system" />
   <project name="platform/external/okhttp4" path="external/okhttp4" remote="caf_system" />
   <project name="platform/external/okio" path="external/okio" remote="caf_system" />
   <project name="platform/external/one-true-awk" path="external/one-true-awk" remote="caf_system" />
+  <project name="platform/external/open-dice" path="external/open-dice" remote="caf_system" />
   <project name="platform/external/opencensus-java" path="external/opencensus-java" remote="caf_system" />
   <project name="platform/external/openscreen" path="external/openscreen" remote="caf_system" />
-  <project name="platform/external/openssh" path="external/openssh" remote="caf_system" />
+  <project name="platform/external/openthread" path="external/openthread" remote="caf_system" />
+  <project name="platform/external/openwrt-prebuilts" path="external/openwrt-prebuilts" remote="caf_system" />
   <project name="platform/external/oss-fuzz" path="external/oss-fuzz" remote="caf_system" />
+  <project name="platform/external/ot-br-posix" path="external/ot-br-posix" remote="caf_system" />
   <project name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" remote="caf_system" />
   <project name="platform/external/parameter-framework" path="external/parameter-framework" remote="caf_system" />
   <project name="platform/external/pcre" path="external/pcre" remote="caf_system" />
@@ -369,6 +392,7 @@
   <project name="platform/external/puffin" path="external/puffin" remote="caf_system" />
   <project name="platform/external/python/apitools" path="external/python/apitools" remote="caf_system" />
   <project name="platform/external/python/asn1crypto" path="external/python/asn1crypto" remote="caf_system" />
+  <project name="platform/external/python/cachetools" path="external/python/cachetools" remote="caf_system" />
   <project name="platform/external/python/cffi" path="external/python/cffi" remote="caf_system" />
   <project name="platform/external/python/cpython2" path="external/python/cpython2" remote="caf_system" />
   <project name="platform/external/python/cpython3" path="external/python/cpython3" remote="caf_system" />
@@ -378,24 +402,32 @@
   <project name="platform/external/python/funcsigs" path="external/python/funcsigs" remote="caf_system" />
   <project name="platform/external/python/futures" path="external/python/futures" remote="caf_system" />
   <project name="platform/external/python/google-api-python-client" path="external/python/google-api-python-client" remote="caf_system" />
+  <project name="platform/external/python/google-auth-library-python" path="external/python/google-auth-library-python" remote="caf_system" />
   <project name="platform/external/python/httplib2" path="external/python/httplib2" remote="caf_system" />
   <project name="platform/external/python/ipaddress" path="external/python/ipaddress" remote="caf_system" />
   <project name="platform/external/python/jinja" path="external/python/jinja" remote="caf_system" />
   <project name="platform/external/python/markupsafe" path="external/python/markupsafe" remote="caf_system" />
-  <project name="platform/external/python/mock" path="external/python/mock" remote="caf_system" />
+  <project name="platform/external/python/mobly" path="external/python/mobly" remote="caf_system" />
   <project name="platform/external/python/oauth2client" path="external/python/oauth2client" remote="caf_system" />
   <project name="platform/external/python/parse_type" path="external/python/parse_type" remote="caf_system" />
+  <project name="platform/external/python/portpicker" path="external/python/portpicker" remote="caf_system" />
   <project name="platform/external/python/pyasn1" path="external/python/pyasn1" remote="caf_system" />
   <project name="platform/external/python/pyasn1-modules" path="external/python/pyasn1-modules" remote="caf_system" />
   <project name="platform/external/python/pybind11" path="external/python/pybind11" remote="caf_system" />
   <project name="platform/external/python/pycparser" path="external/python/pycparser" remote="caf_system" />
   <project name="platform/external/python/pyfakefs" path="external/python/pyfakefs" remote="caf_system" />
   <project name="platform/external/python/pyopenssl" path="external/python/pyopenssl" remote="caf_system" />
+  <project name="platform/external/python/pyserial" path="external/python/pyserial" remote="caf_system" />
+  <project name="platform/external/python/python-api-core" path="external/python/python-api-core" remote="caf_system" />
+  <project name="platform/external/python/pyyaml" path="external/python/pyyaml" remote="caf_system" />
   <project name="platform/external/python/rsa" path="external/python/rsa" remote="caf_system" />
   <project name="platform/external/python/setuptools" path="external/python/setuptools" remote="caf_system" />
   <project name="platform/external/python/six" path="external/python/six" remote="caf_system" />
+  <project name="platform/external/python/timeout-decorator" path="external/python/timeout-decorator" remote="caf_system" />
+  <project name="platform/external/python/typing" path="external/python/typing" remote="caf_system" />
   <project name="platform/external/python/uritemplates" path="external/python/uritemplates" remote="caf_system" />
   <project name="platform/external/rappor" path="external/rappor" remote="caf_system" />
+  <project name="platform/external/renderscript-intrinsics-replacement-toolkit" path="external/renderscript-intrinsics-replacement-toolkit" remote="caf_system" />
   <project name="platform/external/replicaisland" path="external/replicaisland" remote="caf_system" />
   <project name="platform/external/rmi4utils" path="external/rmi4utils" remote="caf_system" />
   <project name="platform/external/rnnoise" path="external/rnnoise" remote="caf_system" />
@@ -408,11 +440,16 @@
   <project name="platform/external/rust/crates/android_logger" path="external/rust/crates/android_logger" remote="caf_system" />
   <project name="platform/external/rust/crates/anyhow" path="external/rust/crates/anyhow" remote="caf_system" />
   <project name="platform/external/rust/crates/arbitrary" path="external/rust/crates/arbitrary" remote="caf_system" />
+  <project name="platform/external/rust/crates/argh" path="external/rust/crates/argh" remote="caf_system" />
+  <project name="platform/external/rust/crates/argh_derive" path="external/rust/crates/argh_derive" remote="caf_system" />
+  <project name="platform/external/rust/crates/argh_shared" path="external/rust/crates/argh_shared" remote="caf_system" />
+  <project name="platform/external/rust/crates/ash" path="external/rust/crates/ash" remote="caf_system" />
   <project name="platform/external/rust/crates/async-stream" path="external/rust/crates/async-stream" remote="caf_system" />
   <project name="platform/external/rust/crates/async-stream-impl" path="external/rust/crates/async-stream-impl" remote="caf_system" />
   <project name="platform/external/rust/crates/async-task" path="external/rust/crates/async-task" remote="caf_system" />
   <project name="platform/external/rust/crates/async-trait" path="external/rust/crates/async-trait" remote="caf_system" />
   <project name="platform/external/rust/crates/atty" path="external/rust/crates/atty" remote="caf_system" />
+  <project name="platform/external/rust/crates/base64" path="external/rust/crates/base64" remote="caf_system" />
   <project name="platform/external/rust/crates/bencher" path="external/rust/crates/bencher" remote="caf_system" />
   <project name="platform/external/rust/crates/bindgen" path="external/rust/crates/bindgen" remote="caf_system" />
   <project name="platform/external/rust/crates/bitflags" path="external/rust/crates/bitflags" remote="caf_system" />
@@ -420,24 +457,35 @@
   <project name="platform/external/rust/crates/byteorder" path="external/rust/crates/byteorder" remote="caf_system" />
   <project name="platform/external/rust/crates/bytes" path="external/rust/crates/bytes" remote="caf_system" />
   <project name="platform/external/rust/crates/cast" path="external/rust/crates/cast" remote="caf_system" />
+  <project name="platform/external/rust/crates/cesu8" path="external/rust/crates/cesu8" remote="caf_system" />
   <project name="platform/external/rust/crates/cexpr" path="external/rust/crates/cexpr" remote="caf_system" />
   <project name="platform/external/rust/crates/cfg-if" path="external/rust/crates/cfg-if" remote="caf_system" />
   <project name="platform/external/rust/crates/chrono" path="external/rust/crates/chrono" remote="caf_system" />
+  <project name="platform/external/rust/crates/ciborium" path="external/rust/crates/ciborium" remote="caf_system" />
+  <project name="platform/external/rust/crates/ciborium-io" path="external/rust/crates/ciborium-io" remote="caf_system" />
+  <project name="platform/external/rust/crates/ciborium-ll" path="external/rust/crates/ciborium-ll" remote="caf_system" />
   <project name="platform/external/rust/crates/clang-sys" path="external/rust/crates/clang-sys" remote="caf_system" />
   <project name="platform/external/rust/crates/clap" path="external/rust/crates/clap" remote="caf_system" />
   <project name="platform/external/rust/crates/codespan-reporting" path="external/rust/crates/codespan-reporting" remote="caf_system" />
+  <project name="platform/external/rust/crates/combine" path="external/rust/crates/combine" remote="caf_system" />
+  <project name="platform/external/rust/crates/command-fds" path="external/rust/crates/command-fds" remote="caf_system" />
+  <project name="platform/external/rust/crates/coset" path="external/rust/crates/coset" remote="caf_system" />
   <project name="platform/external/rust/crates/crc32fast" path="external/rust/crates/crc32fast" remote="caf_system" />
   <project name="platform/external/rust/crates/criterion" path="external/rust/crates/criterion" remote="caf_system" />
   <project name="platform/external/rust/crates/criterion-plot" path="external/rust/crates/criterion-plot" remote="caf_system" />
   <project name="platform/external/rust/crates/crossbeam-channel" path="external/rust/crates/crossbeam-channel" remote="caf_system" />
   <project name="platform/external/rust/crates/crossbeam-deque" path="external/rust/crates/crossbeam-deque" remote="caf_system" />
   <project name="platform/external/rust/crates/crossbeam-epoch" path="external/rust/crates/crossbeam-epoch" remote="caf_system" />
+  <project name="platform/external/rust/crates/crossbeam-queue" path="external/rust/crates/crossbeam-queue" remote="caf_system" />
   <project name="platform/external/rust/crates/crossbeam-utils" path="external/rust/crates/crossbeam-utils" remote="caf_system" />
   <project name="platform/external/rust/crates/csv" path="external/rust/crates/csv" remote="caf_system" />
   <project name="platform/external/rust/crates/csv-core" path="external/rust/crates/csv-core" remote="caf_system" />
+  <project name="platform/external/rust/crates/der-oid-macro" path="external/rust/crates/der-oid-macro" remote="caf_system" />
+  <project name="platform/external/rust/crates/der-parser" path="external/rust/crates/der-parser" remote="caf_system" />
   <project name="platform/external/rust/crates/derive_arbitrary" path="external/rust/crates/derive_arbitrary" remote="caf_system" />
   <project name="platform/external/rust/crates/downcast-rs" path="external/rust/crates/downcast-rs" remote="caf_system" />
   <project name="platform/external/rust/crates/either" path="external/rust/crates/either" remote="caf_system" />
+  <project name="platform/external/rust/crates/enumn" path="external/rust/crates/enumn" remote="caf_system" />
   <project name="platform/external/rust/crates/env_logger" path="external/rust/crates/env_logger" remote="caf_system" />
   <project name="platform/external/rust/crates/fallible-iterator" path="external/rust/crates/fallible-iterator" remote="caf_system" />
   <project name="platform/external/rust/crates/fallible-streaming-iterator" path="external/rust/crates/fallible-streaming-iterator" remote="caf_system" />
@@ -469,6 +517,9 @@
   <project name="platform/external/rust/crates/intrusive-collections" path="external/rust/crates/intrusive-collections" remote="caf_system" />
   <project name="platform/external/rust/crates/itertools" path="external/rust/crates/itertools" remote="caf_system" />
   <project name="platform/external/rust/crates/itoa" path="external/rust/crates/itoa" remote="caf_system" />
+  <project name="platform/external/rust/crates/jni" path="external/rust/crates/jni" remote="caf_system" />
+  <project name="platform/external/rust/crates/jni-sys" path="external/rust/crates/jni-sys" remote="caf_system" />
+  <project name="platform/external/rust/crates/kernlog" path="external/rust/crates/kernlog" remote="caf_system" />
   <project name="platform/external/rust/crates/lazy_static" path="external/rust/crates/lazy_static" remote="caf_system" />
   <project name="platform/external/rust/crates/lazycell" path="external/rust/crates/lazycell" remote="caf_system" />
   <project name="platform/external/rust/crates/libc" path="external/rust/crates/libc" remote="caf_system" />
@@ -486,14 +537,17 @@
   <project name="platform/external/rust/crates/matches" path="external/rust/crates/matches" remote="caf_system" />
   <project name="platform/external/rust/crates/memchr" path="external/rust/crates/memchr" remote="caf_system" />
   <project name="platform/external/rust/crates/memoffset" path="external/rust/crates/memoffset" remote="caf_system" />
+  <project name="platform/external/rust/crates/minimal-lexical" path="external/rust/crates/minimal-lexical" remote="caf_system" />
   <project name="platform/external/rust/crates/mio" path="external/rust/crates/mio" remote="caf_system" />
   <project name="platform/external/rust/crates/nix" path="external/rust/crates/nix" remote="caf_system" />
   <project name="platform/external/rust/crates/no-panic" path="external/rust/crates/no-panic" remote="caf_system" />
   <project name="platform/external/rust/crates/nom" path="external/rust/crates/nom" remote="caf_system" />
+  <project name="platform/external/rust/crates/num-bigint" path="external/rust/crates/num-bigint" remote="caf_system" />
   <project name="platform/external/rust/crates/num-derive" path="external/rust/crates/num-derive" remote="caf_system" />
   <project name="platform/external/rust/crates/num-integer" path="external/rust/crates/num-integer" remote="caf_system" />
   <project name="platform/external/rust/crates/num-traits" path="external/rust/crates/num-traits" remote="caf_system" />
   <project name="platform/external/rust/crates/num_cpus" path="external/rust/crates/num_cpus" remote="caf_system" />
+  <project name="platform/external/rust/crates/oid-registry" path="external/rust/crates/oid-registry" remote="caf_system" />
   <project name="platform/external/rust/crates/once_cell" path="external/rust/crates/once_cell" remote="caf_system" />
   <project name="platform/external/rust/crates/oorandom" path="external/rust/crates/oorandom" remote="caf_system" />
   <project name="platform/external/rust/crates/parking_lot" path="external/rust/crates/parking_lot" remote="caf_system" />
@@ -501,6 +555,10 @@
   <project name="platform/external/rust/crates/paste" path="external/rust/crates/paste" remote="caf_system" />
   <project name="platform/external/rust/crates/peeking_take_while" path="external/rust/crates/peeking_take_while" remote="caf_system" />
   <project name="platform/external/rust/crates/percent-encoding" path="external/rust/crates/percent-encoding" remote="caf_system" />
+  <project name="platform/external/rust/crates/pest" path="external/rust/crates/pest" remote="caf_system" />
+  <project name="platform/external/rust/crates/pest_derive" path="external/rust/crates/pest_derive" remote="caf_system" />
+  <project name="platform/external/rust/crates/pest_generator" path="external/rust/crates/pest_generator" remote="caf_system" />
+  <project name="platform/external/rust/crates/pest_meta" path="external/rust/crates/pest_meta" remote="caf_system" />
   <project name="platform/external/rust/crates/pin-project" path="external/rust/crates/pin-project" remote="caf_system" />
   <project name="platform/external/rust/crates/pin-project-internal" path="external/rust/crates/pin-project-internal" remote="caf_system" />
   <project name="platform/external/rust/crates/pin-project-lite" path="external/rust/crates/pin-project-lite" remote="caf_system" />
@@ -517,6 +575,7 @@
   <project name="platform/external/rust/crates/protobuf" path="external/rust/crates/protobuf" remote="caf_system" />
   <project name="platform/external/rust/crates/protobuf-codegen" path="external/rust/crates/protobuf-codegen" remote="caf_system" />
   <project name="platform/external/rust/crates/quiche" path="external/rust/crates/quiche" remote="caf_system" />
+  <project name="platform/external/rust/crates/quickcheck" path="external/rust/crates/quickcheck" remote="caf_system" />
   <project name="platform/external/rust/crates/quote" path="external/rust/crates/quote" remote="caf_system" />
   <project name="platform/external/rust/crates/rand" path="external/rust/crates/rand" remote="caf_system" />
   <project name="platform/external/rust/crates/rand_chacha" path="external/rust/crates/rand_chacha" remote="caf_system" />
@@ -528,19 +587,26 @@
   <project name="platform/external/rust/crates/regex-automata" path="external/rust/crates/regex-automata" remote="caf_system" />
   <project name="platform/external/rust/crates/regex-syntax" path="external/rust/crates/regex-syntax" remote="caf_system" />
   <project name="platform/external/rust/crates/remain" path="external/rust/crates/remain" remote="caf_system" />
+  <project name="platform/external/rust/crates/remove_dir_all" path="external/rust/crates/remove_dir_all" remote="caf_system" />
   <project name="platform/external/rust/crates/ring" path="external/rust/crates/ring" remote="caf_system" />
   <project name="platform/external/rust/crates/rusqlite" path="external/rust/crates/rusqlite" remote="caf_system" />
+  <project name="platform/external/rust/crates/rustc-demangle" path="external/rust/crates/rustc-demangle" remote="caf_system" />
+  <project name="platform/external/rust/crates/rustc-demangle-capi" path="external/rust/crates/rustc-demangle-capi" remote="caf_system" />
   <project name="platform/external/rust/crates/rustc-hash" path="external/rust/crates/rustc-hash" remote="caf_system" />
+  <project name="platform/external/rust/crates/rusticata-macros" path="external/rust/crates/rusticata-macros" remote="caf_system" />
   <project name="platform/external/rust/crates/rustversion" path="external/rust/crates/rustversion" remote="caf_system" />
   <project name="platform/external/rust/crates/ryu" path="external/rust/crates/ryu" remote="caf_system" />
   <project name="platform/external/rust/crates/same-file" path="external/rust/crates/same-file" remote="caf_system" />
   <project name="platform/external/rust/crates/scopeguard" path="external/rust/crates/scopeguard" remote="caf_system" />
+  <project name="platform/external/rust/crates/semver" path="external/rust/crates/semver" remote="caf_system" />
   <project name="platform/external/rust/crates/serde" path="external/rust/crates/serde" remote="caf_system" />
+  <project name="platform/external/rust/crates/serde-xml-rs" path="external/rust/crates/serde-xml-rs" remote="caf_system" />
   <project name="platform/external/rust/crates/serde_cbor" path="external/rust/crates/serde_cbor" remote="caf_system" />
   <project name="platform/external/rust/crates/serde_derive" path="external/rust/crates/serde_derive" remote="caf_system" />
   <project name="platform/external/rust/crates/serde_json" path="external/rust/crates/serde_json" remote="caf_system" />
   <project name="platform/external/rust/crates/serde_test" path="external/rust/crates/serde_test" remote="caf_system" />
   <project name="platform/external/rust/crates/shared_child" path="external/rust/crates/shared_child" remote="caf_system" />
+  <project name="platform/external/rust/crates/shared_library" path="external/rust/crates/shared_library" remote="caf_system" />
   <project name="platform/external/rust/crates/shlex" path="external/rust/crates/shlex" remote="caf_system" />
   <project name="platform/external/rust/crates/simplelog" path="external/rust/crates/simplelog" remote="caf_system" />
   <project name="platform/external/rust/crates/slab" path="external/rust/crates/slab" remote="caf_system" />
@@ -550,6 +616,7 @@
   <project name="platform/external/rust/crates/structopt-derive" path="external/rust/crates/structopt-derive" remote="caf_system" />
   <project name="platform/external/rust/crates/syn" path="external/rust/crates/syn" remote="caf_system" />
   <project name="platform/external/rust/crates/syn-mid" path="external/rust/crates/syn-mid" remote="caf_system" />
+  <project name="platform/external/rust/crates/tempfile" path="external/rust/crates/tempfile" remote="caf_system" />
   <project name="platform/external/rust/crates/termcolor" path="external/rust/crates/termcolor" remote="caf_system" />
   <project name="platform/external/rust/crates/textwrap" path="external/rust/crates/textwrap" remote="caf_system" />
   <project name="platform/external/rust/crates/thiserror" path="external/rust/crates/thiserror" remote="caf_system" />
@@ -562,6 +629,7 @@
   <project name="platform/external/rust/crates/tokio-macros" path="external/rust/crates/tokio-macros" remote="caf_system" />
   <project name="platform/external/rust/crates/tokio-stream" path="external/rust/crates/tokio-stream" remote="caf_system" />
   <project name="platform/external/rust/crates/tokio-test" path="external/rust/crates/tokio-test" remote="caf_system" />
+  <project name="platform/external/rust/crates/ucd-trie" path="external/rust/crates/ucd-trie" remote="caf_system" />
   <project name="platform/external/rust/crates/unicode-bidi" path="external/rust/crates/unicode-bidi" remote="caf_system" />
   <project name="platform/external/rust/crates/unicode-normalization" path="external/rust/crates/unicode-normalization" remote="caf_system" />
   <project name="platform/external/rust/crates/unicode-segmentation" path="external/rust/crates/unicode-segmentation" remote="caf_system" />
@@ -570,11 +638,14 @@
   <project name="platform/external/rust/crates/untrusted" path="external/rust/crates/untrusted" remote="caf_system" />
   <project name="platform/external/rust/crates/url" path="external/rust/crates/url" remote="caf_system" />
   <project name="platform/external/rust/crates/uuid" path="external/rust/crates/uuid" remote="caf_system" />
-  <project name="platform/external/rust/crates/vmm_vhost" path="external/rust/crates/vmm_vhost" remote="caf_system" />
   <project name="platform/external/rust/crates/vsock" path="external/rust/crates/vsock" remote="caf_system" />
+  <project name="platform/external/rust/crates/vulkano" path="external/rust/crates/vulkano" remote="caf_system" />
   <project name="platform/external/rust/crates/walkdir" path="external/rust/crates/walkdir" remote="caf_system" />
   <project name="platform/external/rust/crates/weak-table" path="external/rust/crates/weak-table" remote="caf_system" />
+  <project name="platform/external/rust/crates/webpki" path="external/rust/crates/webpki" remote="caf_system" />
   <project name="platform/external/rust/crates/which" path="external/rust/crates/which" remote="caf_system" />
+  <project name="platform/external/rust/crates/x509-parser" path="external/rust/crates/x509-parser" remote="caf_system" />
+  <project name="platform/external/rust/crates/xml-rs" path="external/rust/crates/xml-rs" remote="caf_system" />
   <project name="platform/external/rust/crates/zip" path="external/rust/crates/zip" remote="caf_system" />
   <project name="platform/external/rust/cxx" path="external/rust/cxx" remote="caf_system" />
   <project name="platform/external/ruy" path="external/ruy" remote="caf_system" />
@@ -590,7 +661,6 @@
   <project name="platform/external/shaderc/spirv-headers" path="external/shaderc/spirv-headers" remote="caf_system" />
   <project name="platform/external/shflags" path="external/shflags" remote="caf_system" />
   <project name="platform/external/skia" path="external/skia" remote="caf_system" />
-  <project clone-depth="1" name="platform/external/skqp" path="external/skqp" remote="caf_system" />
   <project name="platform/external/sl4a" path="external/sl4a" remote="caf_system" />
   <project name="platform/external/slf4j" path="external/slf4j" remote="caf_system" />
   <project name="platform/external/smali" path="external/smali" remote="caf_system" />
@@ -600,6 +670,7 @@
   <project name="platform/external/speex" path="external/speex" remote="caf_system" />
   <project name="platform/external/sqlite" path="external/sqlite" remote="caf_system" />
   <project name="platform/external/squashfs-tools" path="external/squashfs-tools" remote="caf_system" />
+  <project name="platform/external/stardoc" path="external/stardoc" remote="caf_system" />
   <project name="platform/external/starlark-go" path="external/starlark-go" remote="caf_system" />
   <project name="platform/external/strace" path="external/strace" remote="caf_system" />
   <project name="platform/external/stressapptest" path="external/stressapptest" remote="caf_system" />
@@ -617,11 +688,13 @@
   <project name="platform/external/tinyxml2" path="external/tinyxml2" remote="caf_system" />
   <project name="platform/external/toybox" path="external/toybox" remote="caf_system" />
   <project name="platform/external/tpm2-tss" path="external/tpm2-tss" remote="caf_system" />
+  <project name="platform/external/trace-cmd" path="external/trace-cmd" remote="caf_system" />
   <project name="platform/external/tremolo" path="external/tremolo" remote="caf_system" />
   <project name="platform/external/turbine" path="external/turbine" remote="caf_system" />
   <project name="platform/external/ukey2" path="external/ukey2" remote="caf_system" />
   <project name="platform/external/unicode" path="external/unicode" remote="caf_system" />
   <project name="platform/external/usrsctp" path="external/usrsctp" remote="caf_system" />
+  <project name="platform/external/uwb" path="external/uwb" remote="caf_system" />
   <project name="platform/external/v4l2_codec2" path="external/v4l2_codec2" remote="caf_system" />
   <project name="platform/external/vboot_reference" path="external/vboot_reference" remote="caf_system" />
   <project name="platform/external/virglrenderer" path="external/virglrenderer" remote="caf_system" />
@@ -635,7 +708,9 @@
   <project name="platform/external/wayland-protocols" path="external/wayland-protocols" remote="caf_system" />
   <project name="platform/external/webp" path="external/webp" remote="caf_system" />
   <project name="platform/external/webrtc" path="external/webrtc" remote="caf_system" />
+  <project name="platform/external/wmediumd" path="external/wmediumd" remote="caf_system" />
   <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" remote="caf_system" />
+  <project name="platform/external/wuffs-mirror-release-c" path="external/wuffs-mirror-release-c" remote="caf_system" />
   <project name="platform/external/wycheproof" path="external/wycheproof" remote="caf_system" />
   <project name="platform/external/xmp_toolkit" path="external/xmp_toolkit" remote="caf_system" />
   <project name="platform/external/xz-embedded" path="external/xz-embedded" remote="caf_system" />
@@ -644,6 +719,7 @@
   <project name="platform/external/zlib" path="external/zlib" remote="caf_system" />
   <project name="platform/external/zopfli" path="external/zopfli" remote="caf_system" />
   <project name="platform/external/zstd" path="external/zstd" remote="caf_system" />
+  <project name="platform/external/zucchini" path="external/zucchini" remote="caf_system" />
   <project name="platform/external/zxing" path="external/zxing" remote="caf_system" />
   <project name="platform/frameworks/av" path="frameworks/av" remote="caf_system" />
   <project name="platform/frameworks/base" path="frameworks/base" remote="caf_system" />
@@ -671,6 +747,7 @@
   <project name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" remote="caf_system" />
   <project name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" remote="caf_system" />
   <project name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" remote="caf_system" />
+  <project name="platform/frameworks/opt/pc/windowmanager" path="frameworks/opt/pc/windowmanager" remote="caf_system" />
   <project name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" remote="caf_system" />
   <project name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" remote="caf_system" />
   <project name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" remote="caf_system" />
@@ -695,25 +772,22 @@
   <project name="platform/hardware/st/nfc" path="hardware/st/nfc" remote="caf_system" />
   <project name="platform/hardware/st/secure_element" path="hardware/st/secure_element" remote="caf_system" />
   <project name="platform/hardware/st/secure_element2" path="hardware/st/secure_element2" remote="caf_system" />
+  <project name="platform/hardware/synaptics/wlan" path="hardware/synaptics/wlan" remote="caf_system" />
   <project name="platform/hardware/ti/am57x" path="hardware/ti/am57x" remote="caf_system" />
   <project name="platform/libcore" path="libcore" remote="caf_system" />
   <project name="platform/libnativehelper" path="libnativehelper" remote="caf_system" />
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" remote="caf_system" />
-  <project name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" remote="caf_system" />
   <project name="platform/packages/apps/Browser2" path="packages/apps/Browser2" remote="caf_system" />
   <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar" remote="caf_system" />
   <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2" remote="caf_system" />
   <project name="platform/packages/apps/Car/Calendar" path="packages/apps/Car/Calendar" remote="caf_system" />
   <project name="platform/packages/apps/Car/Cluster" path="packages/apps/Car/Cluster" remote="caf_system" />
   <project name="platform/packages/apps/Car/DebuggingRestrictionController" path="packages/apps/Car/DebuggingRestrictionController" remote="caf_system" />
-  <project name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer" remote="caf_system" />
   <project name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac" remote="caf_system" />
   <project name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" remote="caf_system" />
   <project name="platform/packages/apps/Car/Launcher" path="packages/apps/Car/Launcher" remote="caf_system" />
   <project name="platform/packages/apps/Car/LinkViewer" path="packages/apps/Car/LinkViewer" remote="caf_system" />
   <project name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" remote="caf_system" />
-  <project name="platform/packages/apps/Car/Media" path="packages/apps/Car/Media" remote="caf_system" />
-  <project name="platform/packages/apps/Car/Messenger" path="packages/apps/Car/Messenger" remote="caf_system" />
   <project name="platform/packages/apps/Car/Notification" path="packages/apps/Car/Notification" remote="caf_system" />
   <project name="platform/packages/apps/Car/Provision" path="packages/apps/Car/Provision" remote="caf_system" />
   <project name="platform/packages/apps/Car/Radio" path="packages/apps/Car/Radio" remote="caf_system" />
@@ -722,8 +796,9 @@
   <project name="platform/packages/apps/Car/SettingsIntelligence" path="packages/apps/Car/SettingsIntelligence" remote="caf_system" />
   <project name="platform/packages/apps/Car/SystemUI" path="packages/apps/Car/SystemUI" remote="caf_system" />
   <project name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" remote="caf_system" />
-  <project name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" remote="caf_system" />
-  <project name="platform/packages/apps/Car/tests" path="packages/apps/Car/tests" remote="caf_system" />
+  <project name="platform/packages/apps/Car/Templates" path="packages/apps/Car/Templates" remote="caf_system" />
+  <project name="platform/packages/apps/Car/VoiceControl" path="packages/apps/Car/VoiceControl" remote="caf_system" />
+  <project name="platform/packages/apps/Car/systemlibs" path="packages/apps/Car/systemlibs" remote="caf_system" />
   <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" remote="caf_system" />
   <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" remote="caf_system" />
   <project name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" remote="caf_system" />
@@ -767,6 +842,7 @@
   <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" remote="caf_system" />
   <project name="platform/packages/apps/Stk" path="packages/apps/Stk" remote="caf_system" />
   <project name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" remote="caf_system" />
+  <project name="platform/packages/apps/SystemUIGo" path="packages/apps/SystemUIGo" remote="caf_system" />
   <project name="platform/packages/apps/TV" path="packages/apps/TV" remote="caf_system" />
   <project name="platform/packages/apps/Tag" path="packages/apps/Tag" remote="caf_system" />
   <project name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" remote="caf_system" />
@@ -779,27 +855,36 @@
   <project name="platform/packages/apps/WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="caf_system" />
   <project name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" remote="caf_system" />
   <project name="platform/packages/inputmethods/LeanbackIME" path="packages/inputmethods/LeanbackIME" remote="caf_system" />
+  <project name="platform/packages/modules/AdServices" path="packages/modules/AdServices" remote="caf_system" />
+  <project name="platform/packages/modules/AppSearch" path="packages/modules/AppSearch" remote="caf_system" />
   <project name="platform/packages/modules/ArtPrebuilt" path="packages/modules/ArtPrebuilt" remote="caf_system" />
+  <project name="platform/packages/modules/Auxiliary" path="packages/modules/Auxiliary" remote="caf_system" />
+  <project name="platform/packages/modules/Bluetooth" path="packages/modules/Bluetooth" remote="caf_system" />
   <project name="platform/packages/modules/BootPrebuilt/5.10/arm64" path="packages/modules/BootPrebuilt/5.10/arm64" remote="caf_system" />
   <project name="platform/packages/modules/BootPrebuilt/5.4/arm64" path="packages/modules/BootPrebuilt/5.4/arm64" remote="caf_system" />
   <project name="platform/packages/modules/CaptivePortalLogin" path="packages/modules/CaptivePortalLogin" remote="caf_system" />
   <project name="platform/packages/modules/CellBroadcastService" path="packages/modules/CellBroadcastService" remote="caf_system" />
   <project name="platform/packages/modules/Connectivity" path="packages/modules/Connectivity" remote="caf_system" />
-  <project name="platform/packages/modules/Cronet" path="packages/modules/Cronet" remote="caf_system" />
   <project name="platform/packages/modules/DnsResolver" path="packages/modules/DnsResolver" remote="caf_system" />
   <project name="platform/packages/modules/ExtServices" path="packages/modules/ExtServices" remote="caf_system" />
   <project name="platform/packages/modules/GeoTZ" path="packages/modules/GeoTZ" remote="caf_system" />
   <project name="platform/packages/modules/Gki" path="packages/modules/Gki" remote="caf_system" />
   <project name="platform/packages/modules/IPsec" path="packages/modules/IPsec" remote="caf_system" />
+  <project name="platform/packages/modules/IntentResolver" path="packages/modules/IntentResolver" remote="caf_system" />
+  <project name="platform/packages/modules/Media" path="packages/modules/Media" remote="caf_system" />
   <project name="platform/packages/modules/ModuleMetadata" path="packages/modules/ModuleMetadata" remote="caf_system" />
+  <project name="platform/packages/modules/Nearby" path="packages/modules/Nearby" remote="caf_system" />
   <project name="platform/packages/modules/NetworkPermissionConfig" path="packages/modules/NetworkPermissionConfig" remote="caf_system" />
   <project name="platform/packages/modules/NetworkStack" path="packages/modules/NetworkStack" remote="caf_system" />
   <project name="platform/packages/modules/NeuralNetworks" path="packages/modules/NeuralNetworks" remote="caf_system" />
+  <project name="platform/packages/modules/OnDevicePersonalization" path="packages/modules/OnDevicePersonalization" remote="caf_system" />
   <project name="platform/packages/modules/Permission" path="packages/modules/Permission" remote="caf_system" />
   <project name="platform/packages/modules/RuntimeI18n" path="packages/modules/RuntimeI18n" remote="caf_system" />
+  <project name="platform/packages/modules/SEPolicy" path="packages/modules/SEPolicy" remote="caf_system" />
   <project name="platform/packages/modules/Scheduling" path="packages/modules/Scheduling" remote="caf_system" />
   <project name="platform/packages/modules/SdkExtensions" path="packages/modules/SdkExtensions" remote="caf_system" />
   <project name="platform/packages/modules/StatsD" path="packages/modules/StatsD" remote="caf_system" />
+  <project name="platform/packages/modules/Uwb" path="packages/modules/Uwb" remote="caf_system" />
   <project name="platform/packages/modules/Virtualization" path="packages/modules/Virtualization" remote="caf_system" />
   <project name="platform/packages/modules/Wifi" path="packages/modules/Wifi" remote="caf_system" />
   <project name="platform/packages/modules/adb" path="packages/modules/adb" remote="caf_system" />
@@ -844,17 +929,13 @@
   <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" remote="caf_system" />
   <project name="platform/prebuilts/cmdline-tools" path="prebuilts/cmdline-tools" remote="caf_system" />
   <project name="platform/prebuilts/devtools" path="prebuilts/devtools" remote="caf_system" />
-  <project name="platform/prebuilts/fuchsia_sdk" path="prebuilts/fuchsia_sdk" remote="caf_system" />
-  <project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" remote="caf_system" />
   <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="caf_system" />
-  <project clone-depth="1" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="caf_system" />
   <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" remote="caf_system" />
   <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" remote="caf_system" />
-  <project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" remote="caf_system" />
-  <project name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" remote="caf_system" />
   <project name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" remote="caf_system" />
   <project name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" remote="caf_system" />
   <project name="platform/prebuilts/jdk/jdk11" path="prebuilts/jdk/jdk11" remote="caf_system" />
+  <project name="platform/prebuilts/jdk/jdk17" path="prebuilts/jdk/jdk17" remote="caf_system" />
   <project name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" remote="caf_system" />
   <project name="platform/prebuilts/jdk/jdk9" path="prebuilts/jdk/jdk9" remote="caf_system" />
   <project name="platform/prebuilts/ktlint" path="prebuilts/ktlint" remote="caf_system" />
@@ -862,14 +943,19 @@
   <project name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" remote="caf_system" />
   <project name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" remote="caf_system" />
   <project name="platform/prebuilts/misc" path="prebuilts/misc" remote="caf_system" />
+  <project name="platform/prebuilts/module_sdk/AdServices" path="prebuilts/module_sdk/AdServices" remote="caf_system" />
+  <project name="platform/prebuilts/module_sdk/AppSearch" path="prebuilts/module_sdk/AppSearch" remote="caf_system" />
+  <project name="platform/prebuilts/module_sdk/Bluetooth" path="prebuilts/module_sdk/Bluetooth" remote="caf_system" />
   <project name="platform/prebuilts/module_sdk/Connectivity" path="prebuilts/module_sdk/Connectivity" remote="caf_system" />
   <project name="platform/prebuilts/module_sdk/IPsec" path="prebuilts/module_sdk/IPsec" remote="caf_system" />
   <project name="platform/prebuilts/module_sdk/Media" path="prebuilts/module_sdk/Media" remote="caf_system" />
   <project name="platform/prebuilts/module_sdk/MediaProvider" path="prebuilts/module_sdk/MediaProvider" remote="caf_system" />
+  <project name="platform/prebuilts/module_sdk/OnDevicePersonalization" path="prebuilts/module_sdk/OnDevicePersonalization" remote="caf_system" />
   <project name="platform/prebuilts/module_sdk/Permission" path="prebuilts/module_sdk/Permission" remote="caf_system" />
   <project name="platform/prebuilts/module_sdk/Scheduling" path="prebuilts/module_sdk/Scheduling" remote="caf_system" />
   <project name="platform/prebuilts/module_sdk/SdkExtensions" path="prebuilts/module_sdk/SdkExtensions" remote="caf_system" />
   <project name="platform/prebuilts/module_sdk/StatsD" path="prebuilts/module_sdk/StatsD" remote="caf_system" />
+  <project name="platform/prebuilts/module_sdk/Uwb" path="prebuilts/module_sdk/Uwb" remote="caf_system" />
   <project name="platform/prebuilts/module_sdk/Wifi" path="prebuilts/module_sdk/Wifi" remote="caf_system" />
   <project name="platform/prebuilts/module_sdk/art" path="prebuilts/module_sdk/art" remote="caf_system" />
   <project name="platform/prebuilts/module_sdk/conscrypt" path="prebuilts/module_sdk/conscrypt" remote="caf_system" />
@@ -886,15 +972,16 @@
   <project name="platform/prebuilts/vndk/v29" path="prebuilts/vndk/v29" remote="caf_system" />
   <project name="platform/prebuilts/vndk/v30" path="prebuilts/vndk/v30" remote="caf_system" />
   <project name="platform/prebuilts/vndk/v31" path="prebuilts/vndk/v31" remote="caf_system" />
+  <project name="platform/prebuilts/vndk/v32" path="prebuilts/vndk/v32" remote="caf_system" />
   <project name="platform/sdk" path="sdk" remote="caf_system" />
   <project name="platform/system/apex" path="system/apex" remote="caf_system" />
   <project name="platform/system/bpf" path="system/bpf" remote="caf_system" />
   <project name="platform/system/bpfprogs" path="system/bpfprogs" remote="caf_system" />
-  <project name="platform/system/bt" path="system/bt" remote="caf_system" />
   <project name="platform/system/ca-certificates" path="system/ca-certificates" remote="caf_system" />
   <project name="platform/system/chre" path="system/chre" remote="caf_system" />
   <project name="platform/system/connectivity/wificond" path="system/connectivity/wificond" remote="caf_system" />
   <project name="platform/system/core" path="system/core" remote="caf_system" />
+  <project name="platform/system/dmesgd" path="system/dmesgd" remote="caf_system" />
   <project name="platform/system/extras" path="system/extras" remote="caf_system" />
   <project name="platform/system/gatekeeper" path="system/gatekeeper" remote="caf_system" />
   <project name="platform/system/gsid" path="system/gsid" remote="caf_system" />
@@ -909,6 +996,7 @@
   <project name="platform/system/libhidl" path="system/libhidl" remote="caf_system" />
   <project name="platform/system/libhwbinder" path="system/libhwbinder" remote="caf_system" />
   <project name="platform/system/libprocinfo" path="system/libprocinfo" remote="caf_system" />
+  <project name="platform/system/librustutils" path="system/librustutils" remote="caf_system" />
   <project name="platform/system/libsysprop" path="system/libsysprop" remote="caf_system" />
   <project name="platform/system/libufdt" path="system/libufdt" remote="caf_system" />
   <project name="platform/system/libvintf" path="system/libvintf" remote="caf_system" />
@@ -939,12 +1027,10 @@
   <project name="platform/system/unwinding" path="system/unwinding" remote="caf_system" />
   <project name="platform/system/update_engine" path="system/update_engine" remote="caf_system" />
   <project name="platform/system/vold" path="system/vold" remote="caf_system" />
+  <project name="platform/test/app_compat/csuite" path="test/app_compat/csuite" remote="caf_system" />
   <project name="platform/test/framework" path="test/framework" remote="caf_system" />
   <project name="platform/test/mlts/benchmark" path="test/mlts/benchmark" remote="caf_system" />
   <project name="platform/test/mlts/models" path="test/mlts/models" remote="caf_system" />
-  <project name="platform/test/vti/dashboard" path="test/vti/dashboard" remote="caf_system" />
-  <project name="platform/test/vti/fuzz_test_serving" path="test/vti/fuzz_test_serving" remote="caf_system" />
-  <project name="platform/test/vti/test_serving" path="test/vti/test_serving" remote="caf_system" />
   <project name="platform/test/vts" path="test/vts" remote="caf_system" />
   <project name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" remote="caf_system" />
   <project name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" remote="caf_system" />
@@ -963,12 +1049,14 @@
   <project name="platform/tools/currysrc" path="tools/currysrc" remote="caf_system" />
   <project name="platform/tools/dexter" path="tools/dexter" remote="caf_system" />
   <project name="platform/tools/doc_generation" path="tools/doc_generation" remote="caf_system" />
+  <project name="platform/tools/loganalysis" path="tools/loganalysis" remote="caf_system" />
   <project name="platform/tools/metalava" path="tools/metalava" remote="caf_system" />
   <project name="platform/tools/ndkports" path="tools/ndkports" remote="caf_system" />
   <project name="platform/tools/repohooks" path="tools/repohooks" remote="caf_system" />
   <project name="platform/tools/security" path="tools/security" remote="caf_system" />
   <project name="platform/tools/test/connectivity" path="tools/test/connectivity" remote="caf_system" />
   <project name="platform/tools/test/graphicsbenchmark" path="tools/test/graphicsbenchmark" remote="caf_system" />
+  <project name="platform/tools/test/mobly_snippets" path="tools/test/mobly_snippets" remote="caf_system" />
   <project name="platform/tools/tradefederation/prebuilts" path="tools/tradefederation/prebuilts" remote="caf_system" />
   <project name="platform/tools/trebuchet" path="tools/trebuchet" remote="caf_system" />
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" remote="caf_system" />
@@ -1017,7 +1105,14 @@
   <project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" remote="caf_system" />
   <project name="platform/vendor/qcom-opensource/system/bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="caf_system" />
   <project name="platform/vendor/qcom/opensource/commonsys-intf/audio" path="vendor/qcom/opensource/commonsys-intf/audio" remote="caf_system" />
-  <project name="toolchain/llvm-project" path="external/llvm-project" remote="caf_system" />
+  <project name="platform/vendor/qcom/opensource/commonsys/wifi" path="vendor/qcom/opensource/commonsys/wifi" remote="caf_system">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/qtiwifi-ship-product-defs-system.mk" src="configs/qtiwifi-ship-product-defs-system.mk" />
+  </project>
+  <project name="platform/vendor/st/opensource/frameworks/st21nfc" path="vendor/st/opensource/commonsys/frameworks/st21nfc" remote="caf_system" />
+  <project name="platform/vendor/st/opensource/packages/apps/Nfc" path="vendor/st/opensource/commonsys/packages/apps/Nfc" remote="caf_system">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/nfc-system-product-stm.mk" src="nfc_system_product.mk" />
+  </project>
+  <project name="platform/vendor/st/opensource/system/nfc" path="vendor/st/opensource/commonsys/system/nfc" remote="caf_system" />
   <project name="toolchain/pgo-profiles" remote="caf_system" />
   <project name="tools/platform-compat" remote="caf_system" />
 </manifest>
