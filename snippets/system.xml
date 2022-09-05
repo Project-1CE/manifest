@@ -24,7 +24,7 @@
   <project name="device/google/atv" remote="caf_system" />
   <project name="device/google/contexthub" remote="caf_system" />
   <project name="device/google/cuttlefish" remote="caf_system" />
-  <project name="device/google/cuttlefish_prebuilts" remote="caf_system" />
+  <project clone-depth="1" name="device/google/cuttlefish_prebuilts" remote="caf_system" />
   <project name="device/google/trout" remote="caf_system" />
   <project name="device/google/vrservices" remote="caf_system" />
   <project name="device/google_car" remote="caf_system" />
@@ -857,11 +857,11 @@
   <project name="platform/packages/inputmethods/LeanbackIME" path="packages/inputmethods/LeanbackIME" remote="caf_system" />
   <project name="platform/packages/modules/AdServices" path="packages/modules/AdServices" remote="caf_system" />
   <project name="platform/packages/modules/AppSearch" path="packages/modules/AppSearch" remote="caf_system" />
-  <project name="platform/packages/modules/ArtPrebuilt" path="packages/modules/ArtPrebuilt" remote="caf_system" />
+  <project clone-depth="1" name="platform/packages/modules/ArtPrebuilt" path="packages/modules/ArtPrebuilt" remote="caf_system" />
   <project name="platform/packages/modules/Auxiliary" path="packages/modules/Auxiliary" remote="caf_system" />
   <project name="platform/packages/modules/Bluetooth" path="packages/modules/Bluetooth" remote="caf_system" />
-  <project name="platform/packages/modules/BootPrebuilt/5.10/arm64" path="packages/modules/BootPrebuilt/5.10/arm64" remote="caf_system" />
-  <project name="platform/packages/modules/BootPrebuilt/5.4/arm64" path="packages/modules/BootPrebuilt/5.4/arm64" remote="caf_system" />
+  <project clone-depth="1" name="platform/packages/modules/BootPrebuilt/5.10/arm64" path="packages/modules/BootPrebuilt/5.10/arm64" remote="caf_system" />
+  <project clone-depth="1" name="platform/packages/modules/BootPrebuilt/5.4/arm64" path="packages/modules/BootPrebuilt/5.4/arm64" remote="caf_system" />
   <project name="platform/packages/modules/CaptivePortalLogin" path="packages/modules/CaptivePortalLogin" remote="caf_system" />
   <project name="platform/packages/modules/CellBroadcastService" path="packages/modules/CellBroadcastService" remote="caf_system" />
   <project name="platform/packages/modules/Connectivity" path="packages/modules/Connectivity" remote="caf_system" />
@@ -916,63 +916,63 @@
   <project name="platform/pdk" path="pdk" remote="caf_system" />
   <project name="platform/platform_testing" path="platform_testing" remote="caf_system" />
   <project clone-depth="1" name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" remote="caf_system" />
-  <project name="platform/prebuilts/abi-dumps/platform" path="prebuilts/abi-dumps/platform" remote="caf_system" />
-  <project name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" remote="caf_system" />
-  <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" remote="caf_system" />
-  <project name="platform/prebuilts/asuite" path="prebuilts/asuite" remote="caf_system" />
-  <project name="platform/prebuilts/bazel/linux-x86_64" path="prebuilts/bazel/linux-x86_64" remote="caf_system" />
-  <project name="platform/prebuilts/build-tools" path="prebuilts/build-tools" remote="caf_system" />
-  <project name="platform/prebuilts/bundletool" path="prebuilts/bundletool" remote="caf_system" />
-  <project name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" remote="caf_system" />
-  <project name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" remote="caf_system" />
-  <project name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" remote="caf_system" />
-  <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" remote="caf_system" />
-  <project name="platform/prebuilts/cmdline-tools" path="prebuilts/cmdline-tools" remote="caf_system" />
-  <project name="platform/prebuilts/devtools" path="prebuilts/devtools" remote="caf_system" />
-  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="caf_system" />
-  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" remote="caf_system" />
-  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" remote="caf_system" />
-  <project name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" remote="caf_system" />
-  <project name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" remote="caf_system" />
-  <project name="platform/prebuilts/jdk/jdk11" path="prebuilts/jdk/jdk11" remote="caf_system" />
-  <project name="platform/prebuilts/jdk/jdk17" path="prebuilts/jdk/jdk17" remote="caf_system" />
-  <project name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" remote="caf_system" />
-  <project name="platform/prebuilts/jdk/jdk9" path="prebuilts/jdk/jdk9" remote="caf_system" />
-  <project name="platform/prebuilts/ktlint" path="prebuilts/ktlint" remote="caf_system" />
-  <project name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger" remote="caf_system" />
-  <project name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" remote="caf_system" />
-  <project name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" remote="caf_system" />
-  <project name="platform/prebuilts/misc" path="prebuilts/misc" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/AdServices" path="prebuilts/module_sdk/AdServices" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/AppSearch" path="prebuilts/module_sdk/AppSearch" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/Bluetooth" path="prebuilts/module_sdk/Bluetooth" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/Connectivity" path="prebuilts/module_sdk/Connectivity" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/IPsec" path="prebuilts/module_sdk/IPsec" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/Media" path="prebuilts/module_sdk/Media" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/MediaProvider" path="prebuilts/module_sdk/MediaProvider" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/OnDevicePersonalization" path="prebuilts/module_sdk/OnDevicePersonalization" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/Permission" path="prebuilts/module_sdk/Permission" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/Scheduling" path="prebuilts/module_sdk/Scheduling" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/SdkExtensions" path="prebuilts/module_sdk/SdkExtensions" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/StatsD" path="prebuilts/module_sdk/StatsD" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/Uwb" path="prebuilts/module_sdk/Uwb" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/Wifi" path="prebuilts/module_sdk/Wifi" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/art" path="prebuilts/module_sdk/art" remote="caf_system" />
-  <project name="platform/prebuilts/module_sdk/conscrypt" path="prebuilts/module_sdk/conscrypt" remote="caf_system" />
-  <project name="platform/prebuilts/ndk" path="prebuilts/ndk" remote="caf_system" />
-  <project name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" remote="caf_system" />
-  <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/abi-dumps/platform" path="prebuilts/abi-dumps/platform" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/asuite" path="prebuilts/asuite" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/bazel/linux-x86_64" path="prebuilts/bazel/linux-x86_64" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/bundletool" path="prebuilts/bundletool" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/cmdline-tools" path="prebuilts/cmdline-tools" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/devtools" path="prebuilts/devtools" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/jdk/jdk11" path="prebuilts/jdk/jdk11" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/jdk/jdk17" path="prebuilts/jdk/jdk17" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/jdk/jdk9" path="prebuilts/jdk/jdk9" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/ktlint" path="prebuilts/ktlint" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/misc" path="prebuilts/misc" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/AdServices" path="prebuilts/module_sdk/AdServices" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/AppSearch" path="prebuilts/module_sdk/AppSearch" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/Bluetooth" path="prebuilts/module_sdk/Bluetooth" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/Connectivity" path="prebuilts/module_sdk/Connectivity" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/IPsec" path="prebuilts/module_sdk/IPsec" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/Media" path="prebuilts/module_sdk/Media" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/MediaProvider" path="prebuilts/module_sdk/MediaProvider" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/OnDevicePersonalization" path="prebuilts/module_sdk/OnDevicePersonalization" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/Permission" path="prebuilts/module_sdk/Permission" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/Scheduling" path="prebuilts/module_sdk/Scheduling" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/SdkExtensions" path="prebuilts/module_sdk/SdkExtensions" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/StatsD" path="prebuilts/module_sdk/StatsD" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/Uwb" path="prebuilts/module_sdk/Uwb" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/Wifi" path="prebuilts/module_sdk/Wifi" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/art" path="prebuilts/module_sdk/art" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/module_sdk/conscrypt" path="prebuilts/module_sdk/conscrypt" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/ndk" path="prebuilts/ndk" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" remote="caf_system" />
   <project clone-depth="1" name="platform/prebuilts/r8" path="prebuilts/r8" remote="caf_system" />
-  <project name="platform/prebuilts/remoteexecution-client" path="prebuilts/remoteexecution-client" remote="caf_system" />
-  <project name="platform/prebuilts/runtime" path="prebuilts/runtime" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/remoteexecution-client" path="prebuilts/remoteexecution-client" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/runtime" path="prebuilts/runtime" remote="caf_system" />
   <project clone-depth="1" name="platform/prebuilts/rust" path="prebuilts/rust" remote="caf_system" />
-  <project name="platform/prebuilts/sdk" path="prebuilts/sdk" remote="caf_system" />
-  <project name="platform/prebuilts/tools" path="prebuilts/tools" remote="caf_system" />
-  <project name="platform/prebuilts/vndk/v28" path="prebuilts/vndk/v28" remote="caf_system" />
-  <project name="platform/prebuilts/vndk/v29" path="prebuilts/vndk/v29" remote="caf_system" />
-  <project name="platform/prebuilts/vndk/v30" path="prebuilts/vndk/v30" remote="caf_system" />
-  <project name="platform/prebuilts/vndk/v31" path="prebuilts/vndk/v31" remote="caf_system" />
-  <project name="platform/prebuilts/vndk/v32" path="prebuilts/vndk/v32" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/sdk" path="prebuilts/sdk" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/tools" path="prebuilts/tools" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/vndk/v28" path="prebuilts/vndk/v28" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/vndk/v29" path="prebuilts/vndk/v29" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/vndk/v30" path="prebuilts/vndk/v30" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/vndk/v31" path="prebuilts/vndk/v31" remote="caf_system" />
+  <project clone-depth="1" name="platform/prebuilts/vndk/v32" path="prebuilts/vndk/v32" remote="caf_system" />
   <project name="platform/sdk" path="sdk" remote="caf_system" />
   <project name="platform/system/apex" path="system/apex" remote="caf_system" />
   <project name="platform/system/bpf" path="system/bpf" remote="caf_system" />
@@ -1057,7 +1057,7 @@
   <project name="platform/tools/test/connectivity" path="tools/test/connectivity" remote="caf_system" />
   <project name="platform/tools/test/graphicsbenchmark" path="tools/test/graphicsbenchmark" remote="caf_system" />
   <project name="platform/tools/test/mobly_snippets" path="tools/test/mobly_snippets" remote="caf_system" />
-  <project name="platform/tools/tradefederation/prebuilts" path="tools/tradefederation/prebuilts" remote="caf_system" />
+  <project clone-depth="1" name="platform/tools/tradefederation/prebuilts" path="tools/tradefederation/prebuilts" remote="caf_system" />
   <project name="platform/tools/trebuchet" path="tools/trebuchet" remote="caf_system" />
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" remote="caf_system" />
   <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" remote="caf_system">
