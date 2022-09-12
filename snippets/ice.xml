@@ -77,6 +77,7 @@
   <project path="vendor/ice" name="Project-1CE/vendor_ice" />
 
   <!-- External repos -->
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" remote="la-qssi" revision="refs/tags/android-14.0.0_r0.38" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="la-qssi" revision="4d16d93f49c2b5ecdd0f12c38d194835dd595603" clone-depth="1" />
   <project path="vendor/gapps" name="Project-1CE/vendor_gapps" remote="gitlab" clone-depth="1" />
   <project path="vendor/qcom/common" name="Project-1CE/proprietary_vendor_qcom_common" remote="gitlab" />
