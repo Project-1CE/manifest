@@ -63,6 +63,7 @@
   <project path="vendor/qcom/opensource/vibrator" name="Project-1CE/vendor_qcom_opensource_vibrator" />
 
   <!-- Add new repos -->
+  <project path="packages/apps/Aperture" name="Project-1CE/packages_apps_Aperture" />
   <project path="packages/apps/SimpleDeviceConfig" name="Project-1CE/packages_apps_SimpleDeviceConfig" />
   <project path="packages/apps/Updater" name="Project-1CE/packages_apps_Updater" />
   <project path="tools/extract-utils" name="Project-1CE/tools_extract-utils" />
