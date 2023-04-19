@@ -25,7 +25,6 @@
   <project name="device/google/contexthub" remote="caf_system" />
   <project name="device/google/cuttlefish" remote="caf_system" />
   <project clone-depth="1" name="device/google/cuttlefish_prebuilts" remote="caf_system" />
-  <project name="device/google/trout" remote="caf_system" />
   <project name="device/google/vrservices" remote="caf_system" />
   <project name="device/google_car" remote="caf_system" />
   <project name="device/linaro/dragonboard" remote="caf_system" />
@@ -265,6 +264,7 @@
   <project name="platform/external/kotlinx.coroutines" path="external/kotlinx.coroutines" remote="caf_system" />
   <project name="platform/external/kotlinx.metadata" path="external/kotlinx.metadata" remote="caf_system" />
   <project name="platform/external/ksoap2" path="external/ksoap2" remote="caf_system" />
+  <project name="platform/external/ktfmt" path="external/ktfmt" remote="caf_system" />
   <project name="platform/external/libabigail" path="external/libabigail" remote="caf_system" />
   <project name="platform/external/libaom" path="external/libaom" remote="caf_system" />
   <project name="platform/external/libavc" path="external/libavc" remote="caf_system" />
@@ -371,9 +371,14 @@
   <project name="platform/external/open-dice" path="external/open-dice" remote="caf_system" />
   <project name="platform/external/opencensus-java" path="external/opencensus-java" remote="caf_system" />
   <project name="platform/external/openscreen" path="external/openscreen" remote="caf_system" />
+  <project name="platform/external/openthread" path="external/openthread" remote="caf_system" />
   <project name="platform/external/openwrt-prebuilts" path="external/openwrt-prebuilts" remote="caf_system" />
   <project name="platform/external/oss-fuzz" path="external/oss-fuzz" remote="caf_system" />
+  <project name="platform/external/ot-br-posix" path="external/ot-br-posix" remote="caf_system" />
   <project name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" remote="caf_system" />
+  <project name="platform/external/pandora/avatar" path="external/pandora/avatar" remote="caf_system" />
+  <project name="platform/external/pandora/bt-test-interfaces" path="external/pandora/bt-test-interfaces" remote="caf_system" />
+  <project name="platform/external/pandora/mmi2grpc" path="external/pandora/mmi2grpc" remote="caf_system" />
   <project name="platform/external/parameter-framework" path="external/parameter-framework" remote="caf_system" />
   <project name="platform/external/pcre" path="external/pcre" remote="caf_system" />
   <project name="platform/external/pdfium" path="external/pdfium" remote="caf_system" />
@@ -390,6 +395,7 @@
   <project name="platform/external/puffin" path="external/puffin" remote="caf_system" />
   <project name="platform/external/python/apitools" path="external/python/apitools" remote="caf_system" />
   <project name="platform/external/python/asn1crypto" path="external/python/asn1crypto" remote="caf_system" />
+  <project name="platform/external/python/bumble" path="external/python/bumble" remote="caf_system" />
   <project name="platform/external/python/cachetools" path="external/python/cachetools" remote="caf_system" />
   <project name="platform/external/python/cffi" path="external/python/cffi" remote="caf_system" />
   <project name="platform/external/python/cpython2" path="external/python/cpython2" remote="caf_system" />
@@ -413,6 +419,7 @@
   <project name="platform/external/python/pyasn1-modules" path="external/python/pyasn1-modules" remote="caf_system" />
   <project name="platform/external/python/pybind11" path="external/python/pybind11" remote="caf_system" />
   <project name="platform/external/python/pycparser" path="external/python/pycparser" remote="caf_system" />
+  <project name="platform/external/python/pyee" path="external/python/pyee" remote="caf_system" />
   <project name="platform/external/python/pyfakefs" path="external/python/pyfakefs" remote="caf_system" />
   <project name="platform/external/python/pyopenssl" path="external/python/pyopenssl" remote="caf_system" />
   <project name="platform/external/python/pyserial" path="external/python/pyserial" remote="caf_system" />
@@ -429,6 +436,7 @@
   <project name="platform/external/replicaisland" path="external/replicaisland" remote="caf_system" />
   <project name="platform/external/rmi4utils" path="external/rmi4utils" remote="caf_system" />
   <project name="platform/external/rnnoise" path="external/rnnoise" remote="caf_system" />
+  <project name="platform/external/robolectric" path="external/robolectric" remote="caf_system" />
   <project name="platform/external/robolectric-shadows" path="external/robolectric-shadows" remote="caf_system" />
   <project name="platform/external/roboto-fonts" path="external/roboto-fonts" remote="caf_system" />
   <project name="platform/external/rootdev" path="external/rootdev" remote="caf_system" />
@@ -745,6 +753,7 @@
   <project name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" remote="caf_system" />
   <project name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" remote="caf_system" />
   <project name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" remote="caf_system" />
+  <project name="platform/frameworks/opt/pc/windowmanager" path="frameworks/opt/pc/windowmanager" remote="caf_system" />
   <project name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" remote="caf_system" />
   <project name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" remote="caf_system" />
   <project name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" remote="caf_system" />
@@ -769,6 +778,7 @@
   <project name="platform/hardware/st/nfc" path="hardware/st/nfc" remote="caf_system" />
   <project name="platform/hardware/st/secure_element" path="hardware/st/secure_element" remote="caf_system" />
   <project name="platform/hardware/st/secure_element2" path="hardware/st/secure_element2" remote="caf_system" />
+  <project name="platform/hardware/synaptics/wlan" path="hardware/synaptics/wlan" remote="caf_system" />
   <project name="platform/hardware/ti/am57x" path="hardware/ti/am57x" remote="caf_system" />
   <project name="platform/libcore" path="libcore" remote="caf_system" />
   <project name="platform/libnativehelper" path="libnativehelper" remote="caf_system" />
@@ -779,11 +789,14 @@
   <project name="platform/packages/apps/Car/Calendar" path="packages/apps/Car/Calendar" remote="caf_system" />
   <project name="platform/packages/apps/Car/Cluster" path="packages/apps/Car/Cluster" remote="caf_system" />
   <project name="platform/packages/apps/Car/DebuggingRestrictionController" path="packages/apps/Car/DebuggingRestrictionController" remote="caf_system" />
+  <project name="platform/packages/apps/Car/DialerPrebuilt" path="packages/apps/Car/DialerPrebuilt" remote="caf_system" />
   <project name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac" remote="caf_system" />
   <project name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" remote="caf_system" />
   <project name="platform/packages/apps/Car/Launcher" path="packages/apps/Car/Launcher" remote="caf_system" />
   <project name="platform/packages/apps/Car/LinkViewer" path="packages/apps/Car/LinkViewer" remote="caf_system" />
   <project name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" remote="caf_system" />
+  <project name="platform/packages/apps/Car/MediaPrebuilt" path="packages/apps/Car/MediaPrebuilt" remote="caf_system" />
+  <project name="platform/packages/apps/Car/MessengerPrebuilt" path="packages/apps/Car/MessengerPrebuilt" remote="caf_system" />
   <project name="platform/packages/apps/Car/Notification" path="packages/apps/Car/Notification" remote="caf_system" />
   <project name="platform/packages/apps/Car/Provision" path="packages/apps/Car/Provision" remote="caf_system" />
   <project name="platform/packages/apps/Car/Radio" path="packages/apps/Car/Radio" remote="caf_system" />
@@ -792,6 +805,8 @@
   <project name="platform/packages/apps/Car/SettingsIntelligence" path="packages/apps/Car/SettingsIntelligence" remote="caf_system" />
   <project name="platform/packages/apps/Car/SystemUI" path="packages/apps/Car/SystemUI" remote="caf_system" />
   <project name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" remote="caf_system" />
+  <project name="platform/packages/apps/Car/Templates" path="packages/apps/Car/Templates" remote="caf_system" />
+  <project name="platform/packages/apps/Car/VoiceControl" path="packages/apps/Car/VoiceControl" remote="caf_system" />
   <project name="platform/packages/apps/Car/systemlibs" path="packages/apps/Car/systemlibs" remote="caf_system" />
   <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" remote="caf_system" />
   <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" remote="caf_system" />
@@ -852,6 +867,7 @@
   <project name="platform/packages/modules/AdServices" path="packages/modules/AdServices" remote="caf_system" />
   <project name="platform/packages/modules/AppSearch" path="packages/modules/AppSearch" remote="caf_system" />
   <project clone-depth="1" name="platform/packages/modules/ArtPrebuilt" path="packages/modules/ArtPrebuilt" remote="caf_system" />
+  <project name="platform/packages/modules/Auxiliary" path="packages/modules/Auxiliary" remote="caf_system" />
   <project name="platform/packages/modules/Bluetooth" path="packages/modules/Bluetooth" remote="caf_system" />
   <project clone-depth="1" name="platform/packages/modules/BootPrebuilt/5.10/arm64" path="packages/modules/BootPrebuilt/5.10/arm64" remote="caf_system" />
   <project clone-depth="1" name="platform/packages/modules/BootPrebuilt/5.4/arm64" path="packages/modules/BootPrebuilt/5.4/arm64" remote="caf_system" />
@@ -863,8 +879,10 @@
   <project name="platform/packages/modules/GeoTZ" path="packages/modules/GeoTZ" remote="caf_system" />
   <project name="platform/packages/modules/Gki" path="packages/modules/Gki" remote="caf_system" />
   <project name="platform/packages/modules/IPsec" path="packages/modules/IPsec" remote="caf_system" />
+  <project name="platform/packages/modules/IntentResolver" path="packages/modules/IntentResolver" remote="caf_system" />
   <project name="platform/packages/modules/Media" path="packages/modules/Media" remote="caf_system" />
   <project name="platform/packages/modules/ModuleMetadata" path="packages/modules/ModuleMetadata" remote="caf_system" />
+  <project name="platform/packages/modules/Nearby" path="packages/modules/Nearby" remote="caf_system" />
   <project name="platform/packages/modules/NetworkPermissionConfig" path="packages/modules/NetworkPermissionConfig" remote="caf_system" />
   <project name="platform/packages/modules/NetworkStack" path="packages/modules/NetworkStack" remote="caf_system" />
   <project name="platform/packages/modules/NeuralNetworks" path="packages/modules/NeuralNetworks" remote="caf_system" />
@@ -1043,6 +1061,7 @@
   <project name="platform/tools/loganalysis" path="tools/loganalysis" remote="caf_system" />
   <project name="platform/tools/metalava" path="tools/metalava" remote="caf_system" />
   <project name="platform/tools/ndkports" path="tools/ndkports" remote="caf_system" />
+  <project name="platform/tools/repohooks" path="tools/repohooks" remote="caf_system" />
   <project name="platform/tools/security" path="tools/security" remote="caf_system" />
   <project name="platform/tools/test/connectivity" path="tools/test/connectivity" remote="caf_system" />
   <project name="platform/tools/test/graphicsbenchmark" path="tools/test/graphicsbenchmark" remote="caf_system" />

@@ -70,12 +70,6 @@
   <project path="vendor/ice" name="Project-1CE/vendor_ice" />
 
   <!-- External repos -->
-  <project path="external/chromium-webview/patches" name="LineageOS/android_external_chromium-webview_patches" remote="github" revision="main">
-    <linkfile src="Android.mk" dest="external/chromium-webview/Android.mk" />
-    <linkfile src="CleanSpec.mk" dest="external/chromium-webview/CleanSpec.mk" />
-    <linkfile src="README" dest="external/chromium-webview/README" />
-  </project>
-  <project path="external/chromium-webview/prebuilt/arm64" name="LineageOS/android_external_chromium-webview_prebuilt_arm64" remote="github" revision="main" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="caf_system" revision="4d16d93f49c2b5ecdd0f12c38d194835dd595603" clone-depth="1" />
   <project path="vendor/gapps" name="Project-1CE/vendor_gapps" remote="gitlab" revision="tachibana" clone-depth="1" />
   <project path="vendor/qcom/common" name="Project-1CE/proprietary_vendor_qcom_common" remote="gitlab" revision="tachibana" />
