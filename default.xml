@@ -13,13 +13,13 @@
 
   <remote  name="caf_system"
            fetch="https://git.codelinaro.org/clo/la"
-           revision="refs/tags/LA.QSSI.13.0.r1-10200-qssi.0" />
+           revision="refs/tags/LA.QSSI.13.0.r1-10200.01-qssi.0" />
 
   <remote  name="caf_vendor"
            fetch="https://git.codelinaro.org/clo/la"
-           revision="refs/tags/LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0" />
+           revision="refs/tags/LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0" />
 
-  <default revision="refs/heads/tachibana"
+  <default revision="refs/heads/tachibana-mr1"
            remote="ice"
            sync-c="true"
            sync-j="4" />

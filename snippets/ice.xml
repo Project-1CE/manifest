@@ -25,7 +25,7 @@
   </project>
   <!-- <project path="device/qcom/sepolicy" name="Project-1CE/device_qcom_sepolicy" /> -->
   <project path="device/qcom/sepolicy_vndr" name="Project-1CE/device_qcom_sepolicy_vndr" />
-  <project path="device/qcom/vendor-common" name="Project-1CE/device_qcom_vendor-common" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="Project-1CE/device_qcom_sepolicy_vndr" revision="tachibana-mr1-legacy" />
   <project path="external/fastrpc" name="Project-1CE/external_fastrpc" />
   <project path="external/google-fonts/cutive-mono" name="Project-1CE/external_google-fonts_cutive-mono" />
   <project path="external/jemalloc_new" name="Project-1CE/external_jemalloc_new" />
@@ -57,9 +57,11 @@
   </project>
   <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_wfd" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="Project-1CE/vendor_qcom_opensource_data-ipa-cfg-mgr" />
-  <!-- <project path="vendor/qcom/opensource/dataservices" name="Project-1CE/vendor_qcom_opensource_dataservices" /> -->
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="Project-1CE/vendor_qcom_opensource_data-ipa-cfg-mgr" revision="tachibana-mr1-legacy" />
+  <project path="vendor/qcom/opensource/dataservices" name="Project-1CE/vendor_qcom_opensource_dataservices" />
   <!-- <project path="vendor/qcom/opensource/interfaces" name="Project-1CE/vendor_qcom_opensource_interfaces" /> -->
   <project path="vendor/qcom/opensource/power" name="Project-1CE/vendor_qcom_opensource_power" />
+  <project path="vendor/qcom/opensource/thermal-hal" name="Project-1CE/hardware_qcom_thermal" />
   <project path="vendor/qcom/opensource/vibrator" name="Project-1CE/vendor_qcom_opensource_vibrator" />
 
   <!-- Add new repos -->

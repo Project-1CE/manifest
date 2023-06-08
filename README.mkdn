@@ -7,7 +7,7 @@ Getting started
 To initialize, run the following commands:
 
 ```
-repo init -u https://git.project-ice.org/Project-1CE/manifest -b tachibana
+repo init -u https://git.project-ice.org/Project-1CE/manifest -b tachibana-mr1
 repo sync -c -j$(nproc --all) --force-sync --fail-fast --no-clone-bundle --no-tags
 ```
 
