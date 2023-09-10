@@ -50,7 +50,9 @@
   <remove-project name="platform/external/jemalloc_new" />
   <remove-project name="platform/external/noto-fonts" />
   <remove-project name="platform/external/roboto-fonts" />
+  <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/zlib" />
+  <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/hardware/interfaces" />
@@ -62,6 +64,7 @@
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/apps/ThemePicker" />
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
+  <remove-project name="platform/packages/modules/Bluetooth" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/sepolicy" />

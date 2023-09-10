@@ -31,7 +31,9 @@
   <project path="external/jemalloc_new" name="Project-1CE/external_jemalloc_new" />
   <project path="external/noto-fonts" name="Project-1CE/external_noto-fonts" />
   <project path="external/roboto-fonts" name="Project-1CE/external_roboto-fonts" />
+  <project path="external/tinycompress" name="Project-1CE/external_tinycompress" />
   <project path="external/zlib-ng" name="Project-1CE/external_zlib-ng" />
+  <project path="frameworks/av" name="Project-1CE/frameworks_av" />
   <project path="frameworks/base" name="Project-1CE/frameworks_base" />
   <project path="frameworks/native" name="Project-1CE/frameworks_native" />
   <project path="hardware/interfaces" name="Project-1CE/hardware_interfaces" />
@@ -45,6 +47,7 @@
   <project path="packages/apps/SettingsIntelligence" name="Project-1CE/packages_apps_SettingsIntelligence" />
   <project path="packages/apps/ThemePicker" name="Project-1CE/packages_apps_ThemePicker" />
   <project path="packages/apps/WallpaperPicker2" name="Project-1CE/packages_apps_WallpaperPicker2" />
+  <project path="packages/modules/Bluetooth" name="Project-1CE/packages_modules_Bluetooth" />
   <project path="packages/services/Telephony" name="Project-1CE/packages_services_Telephony" />
   <project path="system/core" name="Project-1CE/system_core" />
   <project path="system/sepolicy" name="Project-1CE/system_sepolicy" />
