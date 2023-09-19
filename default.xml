@@ -13,7 +13,7 @@
 
   <remote  name="caf_system"
            fetch="https://git.codelinaro.org/clo/la"
-           revision="refs/tags/LA.QSSI.13.0.r1-11300.01-qssi.0" />
+           revision="refs/tags/LA.QSSI.13.0.r1-11500.01-qssi.0" />
 
   <remote  name="caf_vendor"
            fetch="https://git.codelinaro.org/clo/la"
