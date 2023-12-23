@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Replace existing repos -->
+  <project path="bootable/recovery" name="Project-1CE/bootable_recovery" />
+  <project path="build/make" name="Project-1CE/build_make">
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="Project-1CE/build_soong">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="device/qcom/common" name="Project-1CE/device_qcom_common">
+    <linkfile dest="device/qcom/qssi/Android.bp" src="Androidbp" />
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk" />
+  </project>
+  <project path="device/qcom/kernelscripts" name="Project-1CE/device_qcom_kernelscripts">
+    <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk" />
+  </project>
+  <!-- <project path="device/qcom/sepolicy" name="Project-1CE/device_qcom_sepolicy" /> -->
+  <project path="device/qcom/sepolicy_vndr" name="Project-1CE/device_qcom_sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="Project-1CE/device_qcom_sepolicy_vndr" revision="umineko-legacy" />
+  <project path="external/fastrpc" name="Project-1CE/external_fastrpc" />
+  <project path="external/google-fonts/cutive-mono" name="Project-1CE/external_google-fonts_cutive-mono" />
+  <project path="external/noto-fonts" name="Project-1CE/external_noto-fonts" />
+  <project path="external/roboto-fonts" name="Project-1CE/external_roboto-fonts" />
+  <project path="external/tinycompress" name="Project-1CE/external_tinycompress" />
+  <project path="frameworks/av" name="Project-1CE/frameworks_av" />
+  <project path="frameworks/base" name="Project-1CE/frameworks_base" />
+  <project path="frameworks/native" name="Project-1CE/frameworks_native" />
+  <project path="hardware/interfaces" name="Project-1CE/hardware_interfaces" />
+  <project path="hardware/libhardware" name="Project-1CE/hardware_libhardware" />
+  <project path="hardware/qcom/bootctrl" name="Project-1CE/hardware_qcom_bootctrl" />
+  <!-- <project path="hardware/qcom/wlan" name="Project-1CE/hardware_qcom_wlan" /> -->
+  <project path="packages/apps/DeskClock" name="Project-1CE/packages_apps_DeskClock" />
+  <project path="packages/apps/Launcher3" name="Project-1CE/packages_apps_Launcher3" />
+  <project path="packages/apps/Music" name="Project-1CE/packages_apps_Music" />
+  <project path="packages/apps/Settings" name="Project-1CE/packages_apps_Settings" />
+  <project path="packages/apps/SettingsIntelligence" name="Project-1CE/packages_apps_SettingsIntelligence" />
+  <project path="packages/apps/ThemePicker" name="Project-1CE/packages_apps_ThemePicker" />
+  <project path="packages/apps/WallpaperPicker2" name="Project-1CE/packages_apps_WallpaperPicker2" />
+  <project path="packages/modules/Bluetooth" name="Project-1CE/packages_modules_Bluetooth" />
+  <project path="packages/services/Telephony" name="Project-1CE/packages_services_Telephony" />
+  <project path="system/core" name="Project-1CE/system_core" />
+  <project path="system/sepolicy" name="Project-1CE/system_sepolicy" />
+  <project path="system/update_engine" name="Project-1CE/system_update_engine" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="Project-1CE/vendor_qcom_opensource_commonsys_display" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="Project-1CE/vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="Project-1CE/vendor_qcom_opensource_commonsys_system_bt" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_display">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+  </project>
+  <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="Project-1CE/vendor_qcom_opensource_commonsys-intf_wfd" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="Project-1CE/vendor_qcom_opensource_data-ipa-cfg-mgr" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="Project-1CE/vendor_qcom_opensource_data-ipa-cfg-mgr" revision="umineko-legacy" />
+  <project path="vendor/qcom/opensource/dataservices" name="Project-1CE/vendor_qcom_opensource_dataservices" />
+  <!-- <project path="vendor/qcom/opensource/interfaces" name="Project-1CE/vendor_qcom_opensource_interfaces" /> -->
+  <project path="vendor/qcom/opensource/power" name="Project-1CE/vendor_qcom_opensource_power" />
+  <project path="vendor/qcom/opensource/thermal-hal" name="Project-1CE/hardware_qcom_thermal" />
+  <project path="vendor/qcom/opensource/vibrator" name="Project-1CE/vendor_qcom_opensource_vibrator" />
+
+  <!-- Add new repos -->
+  <project path="hardware/ice/compat" name="Project-1CE/hardware_ice_compat" />
+  <project path="packages/apps/Aperture" name="Project-1CE/packages_apps_Aperture" />
+  <project path="packages/apps/SimpleDeviceConfig" name="Project-1CE/packages_apps_SimpleDeviceConfig" />
+  <project path="packages/apps/Updater" name="Project-1CE/packages_apps_Updater" />
+  <project path="prebuilts/extract-tools" name="Project-1CE/prebuilts_extract-tools" />
+  <project path="tools/extract-utils" name="Project-1CE/tools_extract-utils" />
+  <project path="vendor/ice" name="Project-1CE/vendor_ice" />
+
+  <!-- External repos -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="la-qssi" revision="4d16d93f49c2b5ecdd0f12c38d194835dd595603" clone-depth="1" />
+  <project path="vendor/gapps" name="Project-1CE/vendor_gapps" remote="gitlab" clone-depth="1" />
+  <project path="vendor/qcom/common" name="Project-1CE/proprietary_vendor_qcom_common" remote="gitlab" />
+  <project path="vendor/qcom/sdclang" name="Project-1CE/proprietary_vendor_qcom_sdclang" remote="gitlab" clone-depth="1" />
+
+</manifest>
