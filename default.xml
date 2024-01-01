@@ -19,6 +19,10 @@
            fetch="https://git.codelinaro.org/clo/la"
            revision="refs/tags/LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0" />
 
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           revision="refs/tags/android-14.0.0_r14" />
+
   <default revision="refs/heads/umineko"
            remote="ice"
            sync-c="true"
