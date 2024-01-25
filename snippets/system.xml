@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project clone-depth="2" name="device/amlogic/yukawa-kernel" remote="la-qssi" />
-  <project name="device/common" remote="la-qssi" />
-  <project name="device/generic/arm64" remote="la-qssi" />
-  <project name="device/generic/armv7-a-neon" remote="la-qssi" />
-  <project name="device/generic/art" remote="la-qssi" />
-  <project name="device/generic/car" remote="la-qssi" />
-  <project name="device/generic/common" remote="la-qssi" />
-  <project name="device/generic/goldfish" remote="la-qssi" />
-  <project name="device/generic/goldfish-opengl" remote="la-qssi" />
-  <project name="device/generic/mini-emulator-arm64" remote="la-qssi" />
-  <project name="device/generic/mini-emulator-armv7-a-neon" remote="la-qssi" />
-  <project name="device/generic/mini-emulator-x86" remote="la-qssi" />
-  <project name="device/generic/mini-emulator-x86_64" remote="la-qssi" />
-  <project name="device/generic/opengl-transport" remote="la-qssi" />
-  <project name="device/generic/qemu" remote="la-qssi" />
-  <project name="device/generic/trusty" remote="la-qssi" />
-  <project name="device/generic/uml" remote="la-qssi" />
-  <project name="device/generic/vulkan-cereal" remote="la-qssi" />
-  <project name="device/generic/x86" remote="la-qssi" />
-  <project name="device/generic/x86_64" remote="la-qssi" />
-  <project name="device/google/atv" remote="la-qssi" />
-  <project name="device/google/contexthub" remote="la-qssi" />
-  <project name="device/google/cuttlefish" remote="la-qssi" />
-  <project clone-depth="1" name="device/google/cuttlefish_prebuilts" remote="la-qssi" />
-  <project name="device/google/vrservices" remote="la-qssi" />
-  <project name="device/google_car" remote="la-qssi" />
-  <project name="device/linaro/dragonboard" remote="la-qssi" />
-  <project name="device/linaro/dragonboard-kernel" remote="la-qssi" />
-  <project name="device/linaro/poplar" remote="la-qssi" />
-  <project name="device/linaro/poplar-kernel" remote="la-qssi" />
-  <project name="device/qcom/qssi" remote="la-qssi" />
-  <project name="device/qcom/qssi_32" remote="la-qssi" />
-  <project name="device/qcom/qssi_32go" remote="la-qssi" />
-  <project name="device/qcom/qssi_64" remote="la-qssi" />
-  <project name="device/qcom/qssi_sdg" remote="la-qssi" />
-  <project name="device/qcom/qssi_xrM" remote="la-qssi" />
-  <project name="device/qcom/sepolicy" remote="la-qssi" />
-  <project name="device/sample" remote="la-qssi" />
-  <project name="kernel/configs" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/4.19/arm64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/5.10/arm64" remote="la-qssi" />
+  <project clone-depth="2" name="device/amlogic/yukawa-kernel" path="device/amlogic/yukawa-kernel" remote="la-qssi" />
+  <project name="device/common" path="device/common" remote="la-qssi" />
+  <project name="device/generic/arm64" path="device/generic/arm64" remote="la-qssi" />
+  <project name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon" remote="la-qssi" />
+  <project name="device/generic/art" path="device/generic/art" remote="la-qssi" />
+  <project name="device/generic/car" path="device/generic/car" remote="la-qssi" />
+  <project name="device/generic/common" path="device/generic/common" remote="la-qssi" />
+  <project name="device/generic/goldfish" path="device/generic/goldfish" remote="la-qssi" />
+  <project name="device/generic/goldfish-opengl" path="device/generic/goldfish-opengl" remote="la-qssi" />
+  <project name="device/generic/mini-emulator-arm64" path="device/generic/mini-emulator-arm64" remote="la-qssi" />
+  <project name="device/generic/mini-emulator-armv7-a-neon" path="device/generic/mini-emulator-armv7-a-neon" remote="la-qssi" />
+  <project name="device/generic/mini-emulator-x86" path="device/generic/mini-emulator-x86" remote="la-qssi" />
+  <project name="device/generic/mini-emulator-x86_64" path="device/generic/mini-emulator-x86_64" remote="la-qssi" />
+  <project name="device/generic/opengl-transport" path="device/generic/opengl-transport" remote="la-qssi" />
+  <project name="device/generic/qemu" path="device/generic/qemu" remote="la-qssi" />
+  <project name="device/generic/trusty" path="device/generic/trusty" remote="la-qssi" />
+  <project name="device/generic/uml" path="device/generic/uml" remote="la-qssi" />
+  <project name="device/generic/vulkan-cereal" path="device/generic/vulkan-cereal" remote="la-qssi" />
+  <project name="device/generic/x86" path="device/generic/x86" remote="la-qssi" />
+  <project name="device/generic/x86_64" path="device/generic/x86_64" remote="la-qssi" />
+  <project name="device/google/atv" path="device/google/atv" remote="la-qssi" />
+  <project name="device/google/contexthub" path="device/google/contexthub" remote="la-qssi" />
+  <project name="device/google/cuttlefish" path="device/google/cuttlefish" remote="la-qssi" />
+  <project clone-depth="1" name="device/google/cuttlefish_prebuilts" path="device/google/cuttlefish_prebuilts" remote="la-qssi" />
+  <project name="device/google/vrservices" path="device/google/vrservices" remote="la-qssi" />
+  <project name="device/google_car" path="device/google_car" remote="la-qssi" />
+  <project name="device/linaro/dragonboard" path="device/linaro/dragonboard" remote="la-qssi" />
+  <project name="device/linaro/dragonboard-kernel" path="device/linaro/dragonboard-kernel" remote="la-qssi" />
+  <project name="device/linaro/poplar" path="device/linaro/poplar" remote="la-qssi" />
+  <project name="device/linaro/poplar-kernel" path="device/linaro/poplar-kernel" remote="la-qssi" />
+  <project name="device/qcom/qssi" path="device/qcom/qssi" remote="la-qssi" />
+  <project name="device/qcom/qssi_32" path="device/qcom/qssi_32" remote="la-qssi" />
+  <project name="device/qcom/qssi_32go" path="device/qcom/qssi_32go" remote="la-qssi" />
+  <project name="device/qcom/qssi_64" path="device/qcom/qssi_64" remote="la-qssi" />
+  <project name="device/qcom/qssi_sdg" path="device/qcom/qssi_sdg" remote="la-qssi" />
+  <project name="device/qcom/qssi_xrM" path="device/qcom/qssi_xrM" remote="la-qssi" />
+  <project name="device/qcom/sepolicy" path="device/qcom/sepolicy" remote="la-qssi" />
+  <project name="device/sample" path="device/sample" remote="la-qssi" />
+  <project name="kernel/configs" path="kernel/configs" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/4.19/arm64" path="kernel/prebuilts/4.19/arm64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/5.10/arm64" path="kernel/prebuilts/5.10/arm64" remote="la-qssi" />
   <project clone-depth="1" name="kernel/prebuilts/5.10/x86-64" path="kernel/prebuilts/5.10/x86_64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/5.15/arm64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/5.15/arm64" path="kernel/prebuilts/5.15/arm64" remote="la-qssi" />
   <project clone-depth="1" name="kernel/prebuilts/5.15/x86-64" path="kernel/prebuilts/5.15/x86_64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/5.4/arm64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/5.4/arm64" path="kernel/prebuilts/5.4/arm64" remote="la-qssi" />
   <project clone-depth="1" name="kernel/prebuilts/5.4/x86-64" path="kernel/prebuilts/5.4/x86_64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/6.1/arm64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/6.1/arm64" path="kernel/prebuilts/6.1/arm64" remote="la-qssi" />
   <project clone-depth="1" name="kernel/prebuilts/6.1/x86-64" path="kernel/prebuilts/6.1/x86_64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/4.19/arm64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/4.19/x86-64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.10/arm64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.15/arm64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.15/x86-64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.4/arm64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" remote="la-qssi" />
-  <project clone-depth="1" name="kernel/prebuilts/mainline/arm64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/4.19/arm64" path="kernel/prebuilts/common-modules/virtual-device/4.19/arm64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/4.19/x86-64" path="kernel/prebuilts/common-modules/virtual-device/4.19/x86-64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.10/arm64" path="kernel/prebuilts/common-modules/virtual-device/5.10/arm64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" path="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.15/arm64" path="kernel/prebuilts/common-modules/virtual-device/5.15/arm64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.15/x86-64" path="kernel/prebuilts/common-modules/virtual-device/5.15/x86-64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.4/arm64" path="kernel/prebuilts/common-modules/virtual-device/5.4/arm64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" path="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" path="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" path="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" path="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" path="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" remote="la-qssi" />
+  <project clone-depth="1" name="kernel/prebuilts/mainline/arm64" path="kernel/prebuilts/mainline/arm64" remote="la-qssi" />
   <project clone-depth="1" name="kernel/prebuilts/mainline/x86-64" path="kernel/prebuilts/mainline/x86_64" remote="la-qssi" />
-  <project name="kernel/tests" remote="la-qssi" />
+  <project name="kernel/tests" path="kernel/tests" remote="la-qssi" />
   <project name="platform/art" path="art" remote="la-qssi" />
   <project name="platform/bionic" path="bionic" remote="la-qssi" />
   <project name="platform/bootable/libbootloader" path="bootable/libbootloader" remote="la-qssi" />
@@ -1211,6 +1211,6 @@
     <linkfile dest="vendor/qcom/defs/product-defs/system/nfc-system-product-stm.mk" src="nfc_system_product.mk" />
   </project>
   <project name="platform/vendor/st/opensource/system/nfc" path="vendor/st/opensource/commonsys/system/nfc" remote="la-qssi" />
-  <project name="toolchain/pgo-profiles" remote="la-qssi" />
-  <project name="tools/platform-compat" remote="la-qssi" />
+  <project name="toolchain/pgo-profiles" path="toolchain/pgo-profiles" remote="la-qssi" />
+  <project name="tools/platform-compat" path="tools/platform-compat" remote="la-qssi" />
 </manifest>
