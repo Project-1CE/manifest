@@ -73,6 +73,8 @@
   <project path="packages/apps/SimpleDeviceConfig" name="Project-1CE/packages_apps_SimpleDeviceConfig" />
   <project path="packages/apps/Updater" name="Project-1CE/packages_apps_Updater" />
   <project path="prebuilts/extract-tools" name="Project-1CE/prebuilts_extract-tools" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-none-linux-gnu" name="Project-1CE/prebuilts_gcc_linux-x86_aarch64_aarch64-none-linux-gnu" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-none-eabi" name="Project-1CE/prebuilts_gcc_linux-x86_arm_arm-none-eabi" />
   <project path="tools/extract-utils" name="Project-1CE/tools_extract-utils" />
   <project path="vendor/ice" name="Project-1CE/vendor_ice" />
 
