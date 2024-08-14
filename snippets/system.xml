@@ -34,6 +34,7 @@
   <project name="device/qcom/qssi_32" path="device/qcom/qssi_32" remote="la-qssi" />
   <project name="device/qcom/qssi_32go" path="device/qcom/qssi_32go" remote="la-qssi" />
   <project name="device/qcom/qssi_64" path="device/qcom/qssi_64" remote="la-qssi" />
+  <project name="device/qcom/qssi_lite" path="device/qcom/qssi_lite" remote="la-qssi" />
   <project name="device/qcom/qssi_sdg" path="device/qcom/qssi_sdg" remote="la-qssi" />
   <project name="device/qcom/qssi_xrM" path="device/qcom/qssi_xrM" remote="la-qssi" />
   <project name="device/qcom/sepolicy" path="device/qcom/sepolicy" remote="la-qssi" />

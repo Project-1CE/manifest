@@ -30,6 +30,7 @@
   <remove-project name="device/qcom/qssi_32" />
   <remove-project name="device/qcom/qssi_32go" />
   <remove-project name="device/qcom/qssi_64" />
+  <remove-project name="device/qcom/qssi_lite" />
   <remove-project name="device/qcom/qssi_sdg" />
   <remove-project name="device/qcom/qssi_xrM" />
   <remove-project name="device/sample" />
