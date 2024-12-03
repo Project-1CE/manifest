@@ -77,6 +77,7 @@
   <!-- <project path="hardware/ice/compat" name="Project-1CE/hardware_ice_compat" /> -->
   <project path="packages/apps/Aperture" name="Project-1CE/packages_apps_Aperture" />
   <project path="packages/apps/AudioFX" name="Project-1CE/packages_apps_AudioFX" />
+  <project path="packages/apps/Camelot" name="Project-1CE/packages_apps_Camelot" />
   <project path="packages/apps/SimpleDeviceConfig" name="Project-1CE/packages_apps_SimpleDeviceConfig" />
   <project path="packages/apps/Updater" name="Project-1CE/packages_apps_Updater" />
   <project path="prebuilts/extract-tools" name="Project-1CE/prebuilts_extract-tools" />
