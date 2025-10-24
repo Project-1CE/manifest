@@ -13,17 +13,17 @@
 
   <remote  name="la-qssi"
            fetch="https://git.codelinaro.org/clo/la"
-           revision="refs/tags/LA.QSSI.14.0.r1-17300-qssi.0" />
+           revision="refs/tags/LA.QSSI.16.0.r1-10000-qssi.0" />
 
   <remote  name="la-vendor"
            fetch="https://git.codelinaro.org/clo/la"
-           revision="refs/tags/LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0" />
+           revision="refs/tags/LA.VENDOR.15.4.0.r1-19300-pakala.QSSI16.0" />
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
-           revision="refs/tags/android-14.0.0_r14" />
+           revision="refs/tags/android-16.0.0_r2" />
 
-  <default revision="refs/heads/umineko"
+  <default revision="refs/heads/25q2"
            remote="ice"
            sync-c="true"
            sync-j="4" />

@@ -7,7 +7,7 @@ Getting started
 To initialize, run the following commands:
 
 ```
-repo init -u https://github.com/Project-1CE/manifest -b umineko
+repo init -u https://github.com/Project-1CE/manifest -b vivy
 repo sync -c -j$(nproc --all) --force-sync --fail-fast --no-clone-bundle --no-tags
 ```
 
@@ -18,5 +18,5 @@ Currently we're using [Gerrit](https://review.project-ice.org/) as our code revi
 
 To upload changes, we do recommend connecting via SSH with any Git client tool as you like:
 ```
-git push ssh://{user_name}@gerrit.project-ice.org:29418/Project-1CE/{repo_name} HEAD:refs/for/umineko
+git push ssh://{user_name}@gerrit.project-ice.org:29418/Project-1CE/{repo_name} HEAD:refs/for/25q2
 ```
